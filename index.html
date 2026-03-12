@@ -20,7 +20,7 @@
     <header>
         <section>
             <div class="container mt-[24px]">
-                <div class=" px-8 flex items-center justify-between">
+                <div class="flex items-center justify-between">
                     <div class="logo flex gap-1 items-center">
                         <h1 class="text-[18px] font-[700] leading-[20px] tracking-[-3%]"> <em>SIMPLY</em> CHOCOLATE</h1>
                         <img src="./images/logo.png" alt="logo" class="w-[24px] h-[24px]">
@@ -375,7 +375,8 @@
 
                 <div
                     class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
-                    <img src="./images/victoria.jpg" alt=""  class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
+                    <img src="./images/victoria.jpg" alt=""
+                        class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
                     <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Victoria Dobrzhanska</h3>
                     <p class="text-[14px] text-gray-500">I love this chocolate bar. Perfect combination of light crispy
                         wafer, covered in a thin layer chocolate.</p>
@@ -383,7 +384,8 @@
 
                 <div
                     class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
-                     <img src="./images/nazar.jpg" alt=""  class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
+                    <img src="./images/nazar.jpg" alt=""
+                        class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
                     <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Nazar Babenko</h3>
                     <p class="text-[14px] text-gray-500">This chocolate confection is a delight! A delight! The wafer is
                         light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
@@ -391,7 +393,8 @@
 
                 <div
                     class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
-                     <img src="./images/olena.jpg" alt=""  class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
+                    <img src="./images/olena.jpg" alt=""
+                        class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
                     <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Olena Kampusch</h3>
                     <p class="text-[14px] text-gray-500"> Chocolate is a family favourite treat. Love the delicious
                         smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
@@ -399,88 +402,117 @@
 
                 <div
                     class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
-                     <img src="./images/oleksandr.jpg" alt=""  class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
+                    <img src="./images/oleksandr.jpg" alt=""
+                        class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
                     <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Oleksandr Melnyk</h3>
                     <p class="text-[14px] text-gray-500">I truly enjoy these chocolates. They have the perfect balance
                         of sweetness and rich cocoa flavor.</p>
                 </div>
 
             </div>
+
         </div>
 
         <div id="reviewDots" class="flex justify-center gap-3 mt-[40px]"></div>
 
-</section>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
 
-        const carousel = document.getElementById("reviewCarousel");
-        const cards = document.querySelectorAll(".reviewCard");
-        const dotsContainer = document.getElementById("reviewDots");
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
 
-        if (!carousel || cards.length === 0 || !dotsContainer) return;
+                const carousel = document.getElementById("reviewCarousel");
+                const cards = document.querySelectorAll(".reviewCard");
+                const dotsContainer = document.getElementById("reviewDots");
 
-        let index = 0;
-        const visibleCards = 3;
-        const maxIndex = cards.length - visibleCards;
+                if (!carousel || cards.length === 0 || !dotsContainer) return;
 
-        cards.forEach((_, i) => {
+                let index = 0;
+                const visibleCards = 3;
+                const maxIndex = cards.length - visibleCards;
 
-            const dot = document.createElement("button");
+                cards.forEach((_, i) => {
 
-            dot.className = "h-2 w-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300";
+                    const dot = document.createElement("button");
 
-            if (i === 0) {
-                dot.classList.remove("w-2");
-                dot.classList.add("w-6", "bg-orange-400");
-            }
+                    dot.className = "h-2 w-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300";
 
-            dot.addEventListener("click", () => {
+                    if (i === 0) {
+                        dot.classList.remove("w-2");
+                        dot.classList.add("w-6", "bg-orange-400");
+                    }
 
-                index = i;
+                    dot.addEventListener("click", () => {
 
-                if (index > maxIndex) {
-                    index = maxIndex;
+                        index = i;
+
+                        if (index > maxIndex) {
+                            index = maxIndex;
+                        }
+
+                        updateCarousel(i);
+
+                    });
+
+                    dotsContainer.appendChild(dot);
+
+                });
+
+                function updateCarousel(activeDotIndex) {
+
+                    const cardWidth = cards[0].offsetWidth + 28;
+
+                    carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+
+                    document.querySelectorAll("#reviewDots button").forEach(dot => {
+
+                        dot.classList.remove("w-6", "bg-orange-400");
+                        dot.classList.add("w-2", "bg-gray-300");
+
+                    });
+
+                    const active = document.querySelectorAll("#reviewDots button")[activeDotIndex];
+
+                    if (active) {
+                        active.classList.remove("w-2");
+                        active.classList.add("w-6", "bg-orange-400");
+                    }
+
                 }
 
-                updateCarousel(i);
-
             });
+        </script>
 
-            dotsContainer.appendChild(dot);
+        <div class="flex justify-center"><button
+                class="border-1 border-[#FD9222] bg-[inherit] p-[14px_40px] rounded-[100px] bg-[#FD9222] text-black font-[600] text-[18px] mt-[64px]">Leave
+                a review</button></div>
+</section>
 
-        });
+<section class="mt-[130px] bg-[url(/images/explore.jpg)] bg-center bg-cover h-[370px] relative ">
+    <div class="absolute inset-0 bg-[#00000033]">
+        <div class="container ">
 
-        function updateCarousel(activeDotIndex) {
 
-            const cardWidth = cards[0].offsetWidth + 28;
+            <div>
+                <h2
+                    class="text-[24px] leading-[28px] tracking-[0.03em] font-[600] text-white pt-[72px] text-center mx-auto w-[378px]">
+                    EXPLORE OUR NEW CHOCOLATE FIRST </h2>
+                <p
+                    class="text-[14px] leading-[18px] tracking-[0.02em] font-[400] text-white mt-[24px] text-center mx-auto w-[467px]">
+                    From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that
+                    will
+                    leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care,
+                    each
+                    piece is a work of art that is sure to please.</p>
+                <div class="flex justify-center"><button
+                        class="border-1 border-[#FD9222] p-[14px_40px] rounded-[100px] bg-[#FD9222] text-white font-[600] text-[18px] mt-[24px] mb-[72px]">Subscribe</button>
+                </div>
 
-            carousel.style.transform = `translateX(-${index * cardWidth}px)`;
-
-            document.querySelectorAll("#reviewDots button").forEach(dot => {
-
-                dot.classList.remove("w-6", "bg-orange-400");
-                dot.classList.add("w-2", "bg-gray-300");
-
-            });
-
-            const active = document.querySelectorAll("#reviewDots button")[activeDotIndex];
-
-            if (active) {
-                active.classList.remove("w-2");
-                active.classList.add("w-6", "bg-orange-400");
-            }
-
-        }
-
-    });
-</script>
+            </div>
+        </div>
 
 
 </section>
-</div>
-</section>
+
 </main>
 
 </body>
