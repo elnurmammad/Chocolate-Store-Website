@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <section>
+        <section id="home">
             <div class="container mt-[24px]">
                 <div class="flex items-center justify-between">
                     <div class="logo flex gap-1 items-center">
@@ -26,11 +26,15 @@
                         <img src="./images/logo.png" alt="logo" class="w-[24px] h-[24px]">
                     </div>
                     <nav class="flex gap-[24px]">
-                        <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">Home</a>
-                        <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">How it’s made?</a>
-                        <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]"> Our products</a>
-                        <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">Top sellers</a>
-                        <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">Chocolate is loved</a>
+                        <a href="#home" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">Home</a>
+                        <a href="#how-its-made" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">How it’s
+                            made?</a>
+                        <a href="#our-products" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]"> Our
+                            products</a>
+                        <a href="#top-sellers" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">Top
+                            sellers</a>
+                        <a href="#chocolate-is-loved"
+                            class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">Chocolate is loved</a>
                     </nav>
                     <div class="social-media flex gap-[18px] items-center">
                         <a href=""> <img src="./images/instagram.png" alt="instagram"></a>
@@ -53,46 +57,54 @@
 
                 <div
                     class="absolute  flex gap-4 left-[80px] bottom-[40px] text-white text-[14px] font-[600] items-center z-10">
-                    <button class="border-1 border-solid p-[14px_40px] rounded-[100px]">Buy Now</button>
-                    <button class="border-1 border-solid p-[14px_40px] rounded-[100px]">How it's made</button>
-                    <div class="flex items-center gap-4 absolute right-[-690px] ">
-                        <p class="text-[14px] font-[500] leading-[18px] tracking-[-3%] ">scroll down</p>
-                        <img src="./images/scroll.png" alt="scroll">
-                    </div>
+                    <button
+                        class="border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">Buy
+                        Now</button>
+                    <button
+                        class="border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">How
+                        it's made</button>
+
+                </div>
+                <div class="flex items-center gap-4 absolute right-[80px] bottom-[45px] ">
+                    <p class="text-[14px] text-white font-[500] leading-[18px] tracking-[-3%] ">scroll down</p>
+                    <a href="#end"><img src="./images/scroll.png" alt="scroll"
+                            class="duration-400 hover:cursor-pointer hover:scale-110"></a>
                 </div>
             </div>
         </section>
 
         <section class="max-w-full mt-[72px] mb-[128px] bg-[#1E1823]  ">
-            <div class="container grid grid-cols-3 gap-22 p-[50px]">
-                <div>
+            <div class="container grid grid-cols-3 gap-12 p-[50px]">
+                <div class="relative">
                     <img src="./images/icon1.png" alt="icon1">
                     <h3 class="font-[600] text-[18px] leading-[22px] text-white pt-[22px]">Unsurpassed taste</h3>
                     <p
-                        class="font--[400] text-[14px] text-[#FFFFFFB2] leading-[17px] tracking-[-2%] pt-[18px] w-[308px]">
+                        class="font-[400] text-[14px] text-[#FFFFFFB2] leading-[17px] tracking-[-2%] pt-[18px] w-[308px]">
                         Crafted with the finest
                         quality cocoa beans and a dedication to perfection, each bite is a decadent
                         experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed
                         Taste
                         and discover a new level of chocolate bliss.</p>
+                    <div class="h-[124px] w-[1px] bg-[#FFFFFF80] absolute left-[320px] bottom-[60px]"></div>
                 </div>
 
-                <div>
+                <div class="relative">
                     <img src="./images/icon2.png" alt="icon2">
                     <h3 class="font-[600] text-[18px] leading-[22px] text-white pt-[22px]">Affordable price</h3>
                     <p
-                        class="font--[400] text-[14px] text-[#FFFFFFB2] leading-[17px] tracking-[-2%] pt-[18px] w-[308px] ">
+                        class="font-[400] text-[14px] text-[#FFFFFFB2] leading-[17px] tracking-[-2%] pt-[18px] w-[308px] ">
                         Indulge in high-quality
                         chocolate without breaking the bank with Simply Chocolate's selection of
                         affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing
                         taste or quality. Browse our selection and indulge in affordable luxury today.</p>
+                    <div class="h-[124px] w-[1px] bg-[#FFFFFF80] absolute left-[320px] bottom-[60px]"></div>
 
                 </div>
                 <div>
                     <img src="./images/icon3.png" alt="icon2">
                     <h3 class="font-[600] text-[18px] leading-[22px] text-white pt-[22px]">Own production</h3>
                     <p
-                        class="font--[400] text-[14px] text-[#FFFFFFB2] leading-[17px] tracking-[-2%] pt-[18px] w-[308px] ">
+                        class="font-[400] text-[14px] text-[#FFFFFFB2] leading-[17px] tracking-[-2%] pt-[18px] w-[308px] ">
                         We take pride in our own
                         production process, ensuring that every step is carefully crafted to
                         perfection. From selecting the finest ingredients to handcrafting each piece, our attention to
@@ -117,7 +129,7 @@
                         our process adds up to one exceptional taste sensation.</p>
                 </div>
                 <div class="grid grid-cols-4 justify-center items-center gap-[20px]">
-                    <div class="bg-[#FD9222] p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px]">
+                    <div class="bg-[#FD9222] p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] cursor-pointer">
                         <img src="./images/milk-chocolate.png" alt="milk-chocolate" class="w-[200px] ">
                         <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em]">MILK CHOCOLATE
                         </h3>
@@ -143,7 +155,7 @@
 
         </section>
 
-        <section class="mb-[130px]">
+        <section id="how-its-made" class="mb-[130px]">
             <div class="container">
                 <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center mb-[50px]">HOW IT’S <span
                         class="text-[#FD9222]">MADE?</span></h2>
@@ -178,7 +190,7 @@
         </section>
 
         <section>
-            <div class="container">
+            <div id="our-products" class="container">
                 <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center mb-[50px]">OUR <span
                         class="text-[#FD9222] ">PRODUCTS</span></h2>
                 <!-- carousel -->
@@ -336,215 +348,302 @@
             </div>
 
 
-</html>
-</section>
 
-<section class="mt-[130px]">
-    <div class="container">
-        <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center"><span
-                class="text-[#FD9222] text-center mb-[50px]">TOP </span>SELLERS</h2>
-        <div class="grid grid-cols-3 gap-4 mt-[50px]">
-            <img src="./images/best seller1.png" alt="" class="w-[368px] h-[464px] object-cover rounded-[15px]">
-            <img src="./images/best seller2.png" alt="" class="w-[368px] h-[464px] object-cover rounded-[15px]">
-            <img src="./images/best seller3.png" alt="" class="w-[368px] h-[464px] object-cover rounded-[15px]">
-        </div>
-        <div class="flex justify-between items-start mt-8">
-            <p class="font-normal text-[14px] leading-[18px] tracking-[-0.02em] w-[407px]">Crazy enough chocolate
-                originates from a bean just like the coffee bean called Cacao. Cacao has been
-                around for thousands of years and was first discovered by the Native American tribe called the Mayans.
-            </p>
-            <button
-                class="border-1 border-solid p-[14px_40px] rounded-[100px] bg-[#FD9222] text-white font-[600] text-[18px] ">Buy
-                now</button>
-        </div>
-    </div>
+        </section>
 
-
-
-</section>
-
-<section class="mt-[130px]">
-    <div class="container">
-        <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center mb-[50px]"><span
-                class="text-[#FD9222]">CHOCOLATE</span> IS LOVED</h2>
-
-        <div class="overflow-hidden pt-[43px]">
-
-            <div id="reviewCarousel" class="flex gap-[28px] transition-transform duration-500">
-
-                <div
-                    class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
-                    <img src="./images/victoria.jpg" alt=""
-                        class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
-                    <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Victoria Dobrzhanska</h3>
-                    <p class="text-[14px] text-gray-500">I love this chocolate bar. Perfect combination of light crispy
-                        wafer, covered in a thin layer chocolate.</p>
+        <section id="top-sellers" class="mt-[130px]">
+            <div class="container">
+                <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center"><span
+                        class="text-[#FD9222] text-center mb-[50px]">TOP </span>SELLERS</h2>
+                <div class="grid grid-cols-3 gap-4 mt-[50px]">
+                    <img src="./images/best seller1.png" alt="" class="w-[368px] h-[464px] object-cover rounded-[15px]">
+                    <img src="./images/best seller2.png" alt="" class="w-[368px] h-[464px] object-cover rounded-[15px]">
+                    <img src="./images/best seller3.png" alt="" class="w-[368px] h-[464px] object-cover rounded-[15px]">
                 </div>
-
-                <div
-                    class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
-                    <img src="./images/nazar.jpg" alt=""
-                        class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
-                    <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Nazar Babenko</h3>
-                    <p class="text-[14px] text-gray-500">This chocolate confection is a delight! A delight! The wafer is
-                        light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+                <div class="flex justify-between items-start mt-8">
+                    <p class="font-normal text-[14px] leading-[18px] tracking-[-0.02em] w-[407px]">Crazy enough
+                        chocolate
+                        originates from a bean just like the coffee bean called Cacao. Cacao has been
+                        around for thousands of years and was first discovered by the Native American tribe called the
+                        Mayans.
+                    </p>
+                    <button
+                        class="border-1 border-solid p-[14px_40px] rounded-[100px] bg-[#FD9222] text-white font-[600] text-[18px] duration-400 cursor-pointer hover:bg-white hover:text-black hover:border-[#FD9222]">Buy
+                        now</button>
                 </div>
-
-                <div
-                    class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
-                    <img src="./images/olena.jpg" alt=""
-                        class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
-                    <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Olena Kampusch</h3>
-                    <p class="text-[14px] text-gray-500"> Chocolate is a family favourite treat. Love the delicious
-                        smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
-                </div>
-
-                <div
-                    class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
-                    <img src="./images/oleksandr.jpg" alt=""
-                        class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
-                    <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Oleksandr Melnyk</h3>
-                    <p class="text-[14px] text-gray-500">I truly enjoy these chocolates. They have the perfect balance
-                        of sweetness and rich cocoa flavor.</p>
-                </div>
-
             </div>
 
-        </div>
-
-        <div id="reviewDots" class="flex justify-center gap-3 mt-[40px]"></div>
 
 
+        </section>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
+        <section class="mt-[130px]">
+            <div id="chocolate-is-loved" class="container">
+                <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center mb-[50px]"><span
+                        class="text-[#FD9222]">CHOCOLATE</span> IS LOVED</h2>
 
-                const carousel = document.getElementById("reviewCarousel");
-                const cards = document.querySelectorAll(".reviewCard");
-                const dotsContainer = document.getElementById("reviewDots");
+                <div class="overflow-hidden pt-[43px]">
 
-                if (!carousel || cards.length === 0 || !dotsContainer) return;
+                    <div id="reviewCarousel" class="flex gap-[28px] transition-transform duration-500">
 
-                let index = 0;
-                const visibleCards = 3;
-                const maxIndex = cards.length - visibleCards;
+                        <div
+                            class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
+                            <img src="./images/victoria.jpg" alt=""
+                                class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
+                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Victoria Dobrzhanska</h3>
+                            <p class="text-[14px] text-gray-500">I love this chocolate bar. Perfect combination of light
+                                crispy
+                                wafer, covered in a thin layer chocolate.</p>
+                        </div>
 
-                cards.forEach((_, i) => {
+                        <div
+                            class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
+                            <img src="./images/nazar.jpg" alt=""
+                                class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
+                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Nazar Babenko</h3>
+                            <p class="text-[14px] text-gray-500">This chocolate confection is a delight! A delight! The
+                                wafer is
+                                light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+                        </div>
 
-                    const dot = document.createElement("button");
+                        <div
+                            class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
+                            <img src="./images/olena.jpg" alt=""
+                                class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
+                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Olena Kampusch</h3>
+                            <p class="text-[14px] text-gray-500"> Chocolate is a family favourite treat. Love the
+                                delicious
+                                smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+                        </div>
 
-                    dot.className = "h-2 w-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300";
+                        <div
+                            class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
+                            <img src="./images/oleksandr.jpg" alt=""
+                                class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
+                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Oleksandr Melnyk</h3>
+                            <p class="text-[14px] text-gray-500">I truly enjoy these chocolates. They have the perfect
+                                balance
+                                of sweetness and rich cocoa flavor.</p>
+                        </div>
 
-                    if (i === 0) {
-                        dot.classList.remove("w-2");
-                        dot.classList.add("w-6", "bg-orange-400");
-                    }
+                    </div>
 
-                    dot.addEventListener("click", () => {
+                </div>
 
-                        index = i;
+                <div id="reviewDots" class="flex justify-center gap-3 mt-[40px]"></div>
 
-                        if (index > maxIndex) {
-                            index = maxIndex;
+
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+
+                        const carousel = document.getElementById("reviewCarousel");
+                        const cards = document.querySelectorAll(".reviewCard");
+                        const dotsContainer = document.getElementById("reviewDots");
+
+                        if (!carousel || cards.length === 0 || !dotsContainer) return;
+
+                        let index = 0;
+                        const visibleCards = 3;
+                        const maxIndex = cards.length - visibleCards;
+
+                        cards.forEach((_, i) => {
+
+                            const dot = document.createElement("button");
+
+                            dot.className = "h-2 w-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300";
+
+                            if (i === 0) {
+                                dot.classList.remove("w-2");
+                                dot.classList.add("w-6", "bg-orange-400");
+                            }
+
+                            dot.addEventListener("click", () => {
+
+                                index = i;
+
+                                if (index > maxIndex) {
+                                    index = maxIndex;
+                                }
+
+                                updateCarousel(i);
+
+                            });
+
+                            dotsContainer.appendChild(dot);
+
+                        });
+
+                        function updateCarousel(activeDotIndex) {
+
+                            const cardWidth = cards[0].offsetWidth + 28;
+
+                            carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+
+                            document.querySelectorAll("#reviewDots button").forEach(dot => {
+
+                                dot.classList.remove("w-6", "bg-orange-400");
+                                dot.classList.add("w-2", "bg-gray-300");
+
+                            });
+
+                            const active = document.querySelectorAll("#reviewDots button")[activeDotIndex];
+
+                            if (active) {
+                                active.classList.remove("w-2");
+                                active.classList.add("w-6", "bg-orange-400");
+                            }
+
                         }
 
-                        updateCarousel(i);
-
                     });
+                </script>
 
-                    dotsContainer.appendChild(dot);
+                <div class="flex justify-center"><button
+                        class="border-1 border-[#FD9222] bg-[inherit] p-[14px_40px] rounded-[100px] bg-[#FD9222] text-black font-[600] text-[18px] mt-[64px] duration-400 hover:text-white hover:bg-[#FD9222] cursor-pointer">Leave
+                        a review</button></div>
+        </section>
 
-                });
+        <section class="mt-[130px] bg-[url(/images/explore.jpg)] bg-cover bg-no-repeat bg-center h-[380px] relative ">
 
-                function updateCarousel(activeDotIndex) {
+            <div class="absolute inset-0 bg-[#00000033]">
+                <div class="container">
 
-                    const cardWidth = cards[0].offsetWidth + 28;
 
-                    carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+                    <div>
+                        <h2
+                            class="text-[24px] leading-[28px] tracking-[0.03em] font-[600] text-white pt-[72px] text-center mx-auto w-[378px]">
+                            EXPLORE OUR NEW CHOCOLATE FIRST </h2>
+                        <p
+                            class="text-[14px] leading-[18px] tracking-[0.02em] font-[400] text-white mt-[24px] text-center mx-auto w-[467px]">
+                            From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+                            indulgence that
+                            will
+                            leave you craving more. Made with only the finest ingredients and handcrafted with the
+                            utmost care,
+                            each
+                            piece is a work of art that is sure to please.</p>
+                        <div class="flex justify-center"><button id="openPopUp-explore"
+                                class="border-1 border-[#FD9222] p-[14px_40px] rounded-[100px] bg-[#FD9222] text-white font-[600] text-[18px] mt-[24px] duration-400 [72px] cursor-pointer hover:bg-[transparent]">Subscribe</button>
+                        </div>
 
-                    document.querySelectorAll("#reviewDots button").forEach(dot => {
+                    </div>
+                </div>
 
-                        dot.classList.remove("w-6", "bg-orange-400");
-                        dot.classList.add("w-2", "bg-gray-300");
+        </section>
 
-                    });
+    </main>
 
-                    const active = document.querySelectorAll("#reviewDots button")[activeDotIndex];
+    <footer id="end" class="bg-[#1E1823]">
+        <div class="container pt-[50px] ">
+            <div class="flex justify-between pb-[150px]">
+                <div>
+                    <h3 class="text-[28px] leading-[34px] tracking-[0.02em] font-[500] text-white  w-[378px]"><span
+                            class="text-[#FD9222]">Chocolate</span> a delicious cure for a bad day</h3>
+                </div>
+                <div class="flex items-start gap-[63px]">
+                    <div>
+                        <p class="text-[14px] leading-[18px] font-[500] text-white mb-[14px]">Contact us</p>
+                        <p class="text-[14px] leading-[18px] font-[500] text-white mb-[4px]">+380 (68) 443-94-26</p>
+                        <p class="text-[14px] leading-[18px] font-[500] text-white">simplychoc@gmail.com</p>
+                    </div>
 
-                    if (active) {
-                        active.classList.remove("w-2");
-                        active.classList.add("w-6", "bg-orange-400");
-                    }
+                    <div class="social-media flex gap-[18px] items-center">
+                        <a href=""> <img src="./images/instagram-footer.png" alt="instagram"></a>
+                        <a href=""> <img src="./images/twitter-footer.png" alt="twitter"></a>
+                    </div>
+                </div>
 
-                }
+            </div>
+            <div class="w-full h-[1px] bg-[#FFFFFF1A]"></div>
+            <nav class="flex gap-[24px] mt-[24px] pb-[50px]">
+                <a href="#home" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white">Home</a>
+                <a href="#how-its-made" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white">How it’s
+                    made?</a>
+                <a href="#our-products" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white"> Our
+                    products</a>
+                <a href="#top-sellers" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white">Top
+                    sellers</a>
+                <a href="#chocolate-is-loved"
+                    class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white">Chocolate is loved</a>
+            </nav>
+        </div>
+    </footer>
 
-            });
+    <!-----POPUPS----->
+     <!-----POPUP-EXPLORE----->
+    <div id="PopUp-explore" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
+
+        <div class=" w-[538px] h-[412px] rounded-xl relative">
+
+            <div id="popupContent" class="bg-white w-[538px] h-[412px] rounded-t-xl
+    translate-y-full opacity-0
+    transition duration-500">
+
+                <button id="closePopUp-explore" class="absolute top-4 right-4 text-xl text-white cursor-pointer">
+                    ✕
+                </button>
+
+                <img src="./images/popup-explore.png" class="h-[196px] w-full object-cover">
+
+                <div class="p-6">
+
+                    <p class="font-semibold text-2xl uppercase mt-[10px]">
+                        Explore our <span class="text-[#FD9222]">new chocolate</span> first!
+                    </p>
+
+                    <div class="mt-4 flex gap-3">
+
+                        <input type="email" placeholder="Enter your email"
+                            class="border p-[14px] rounded-[30px] w-full">
+
+                        <button class="bg-[#FD9222] text-white px-6 rounded-[30px]">
+                            Subscribe
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            const openBtn = document.getElementById("openPopUp-explore")
+            const popup = document.getElementById("PopUp-explore")
+            const popupContent = document.getElementById("popupContent")
+            const closeBtn = document.getElementById("closePopUp-explore")
+
+            openBtn.addEventListener("click", () => {
+
+                popup.classList.remove("hidden")
+
+                setTimeout(() => {
+                    popupContent.classList.remove("translate-y-full", "opacity-0")
+                }, 10)
+
+            })
+
+            closeBtn.addEventListener("click", () => {
+
+                popupContent.classList.add("translate-y-full", "opacity-0")
+
+                setTimeout(() => {
+                    popup.classList.add("hidden")
+                }, 500)
+
+            })
+
         </script>
 
-        <div class="flex justify-center"><button
-                class="border-1 border-[#FD9222] bg-[inherit] p-[14px_40px] rounded-[100px] bg-[#FD9222] text-black font-[600] text-[18px] mt-[64px]">Leave
-                a review</button></div>
-</section>
-
-<section class="mt-[130px] bg-[url(/images/explore.jpg)] bg-cover bg-no-repeat bg-center h-[380px] relative ">
-
-    <div class="absolute inset-0 bg-[#00000033]">
-        <div class="container">
 
 
-            <div>
-                <h2
-                    class="text-[24px] leading-[28px] tracking-[0.03em] font-[600] text-white pt-[72px] text-center mx-auto w-[378px]">
-                    EXPLORE OUR NEW CHOCOLATE FIRST </h2>
-                <p
-                    class="text-[14px] leading-[18px] tracking-[0.02em] font-[400] text-white mt-[24px] text-center mx-auto w-[467px]">
-                    From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that
-                    will
-                    leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care,
-                    each
-                    piece is a work of art that is sure to please.</p>
-                <div class="flex justify-center"><button
-                        class="border-1 border-[#FD9222] p-[14px_40px] rounded-[100px] bg-[#FD9222] text-white font-[600] text-[18px] mt-[24px] mb-[72px]">Subscribe</button>
-                </div>
 
-            </div>
-        </div>
 
-</section>
 
-</main>
 
-<footer class="bg-[#1E1823]">
-    <div class="container pt-[50px] ">
-        <div class="flex justify-between pb-[150px]">
-            <div>
-                <h3 class="text-[28px] leading-[34px] tracking-[0.02em] font-[500] text-white  w-[378px]"><span
-                        class="text-[#FD9222]">Chocolate</span> a delicious cure for a bad day</h3>
-            </div>
-            <div class="flex items-start gap-[63px]">
-                <div>
-                    <p class="text-[14px] leading-[18px] font-[500] text-white mb-[14px]">Contact us</p>
-                    <p class="text-[14px] leading-[18px] font-[500] text-white mb-[4px]">+380 (68) 443-94-26</p>
-                    <p class="text-[14px] leading-[18px] font-[500] text-white">simplychoc@gmail.com</p>
-                </div>
-
-                <div class="social-media flex gap-[18px] items-center">
-                    <a href=""> <img src="./images/instagram-footer.png" alt="instagram"></a>
-                    <a href=""> <img src="./images/twitter-footer.png" alt="twitter"></a>
-                </div>
-            </div>
-
-        </div>
-        <div class="w-full h-[1px] bg-[#FFFFFF1A]"></div>
-        <nav class="flex gap-[24px] mt-[24px] pb-[50px]">
-            <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white">Home</a>
-            <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white">How it’s made?</a>
-            <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white"> Our products</a>
-            <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white">Top sellers</a>
-            <a href="#!" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] text-white">Chocolate is loved</a>
-        </nav>
-    </div>
-</footer>
 
 </body>
 
