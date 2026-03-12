@@ -135,17 +135,17 @@
                         </h3>
                     </div>
                     <div
-                        class="bg-white p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px]">
-                        <img src="./images/milk.png" alt="milk" class="max-w-[200px]">
+                        class="bg-white p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px] cursor-pointer">
+                        <img id="openPopUp-milk" src="./images/milk.png" alt="milk" class="max-w-[200px]">
                         <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">MILK</h3>
                     </div>
-                    <div class="bg-[#1E1823] p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px]">
+                    <div class="bg-[#1E1823] p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] cursor-pointer">
                         <img src="./images/nuts.png" alt="nuts" class="max-w-[240px]  h-[150px] ">
                         <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em] pt-[46px]">NUTS
                         </h3>
                     </div>
                     <div
-                        class="bg-white p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px]">
+                        class="bg-white p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px] cursor-pointer">
                         <img src="./images/chocolate.png" alt="chocolote" class="max-w-[200px] ">
                         <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">SEMI - SWEET
                             CHOCOLATE</h3>
@@ -571,12 +571,12 @@
     </footer>
 
     <!-----POPUPS----->
-     <!-----POPUP-EXPLORE----->
+    <!-----POPUP-EXPLORE----->
     <div id="PopUp-explore" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
 
         <div class=" w-[538px] h-[412px] rounded-xl relative">
 
-            <div id="popupContent" class="bg-white w-[538px] h-[412px] rounded-t-xl
+            <div id="popupContent-explore" class="bg-white w-[538px] h-[412px] rounded-t-xl
     translate-y-full opacity-0
     transition duration-500">
 
@@ -608,43 +608,113 @@
             </div>
 
         </div>
+    </div>
+    <script>
 
-        <script>
+        const openBtn = document.getElementById("openPopUp-explore")
+        const popup = document.getElementById("PopUp-explore")
+        const popupContent = document.getElementById("popupContent-explore")
+        const closeBtn = document.getElementById("closePopUp-explore")
 
-            const openBtn = document.getElementById("openPopUp-explore")
-            const popup = document.getElementById("PopUp-explore")
-            const popupContent = document.getElementById("popupContent")
-            const closeBtn = document.getElementById("closePopUp-explore")
+        openBtn.addEventListener("click", () => {
 
-            openBtn.addEventListener("click", () => {
+            popup.classList.remove("hidden")
 
-                popup.classList.remove("hidden")
+            setTimeout(() => {
+                popupContent.classList.remove("translate-y-full", "opacity-0")
+            }, 10)
+
+        })
+
+        closeBtn.addEventListener("click", () => {
+
+            popupContent.classList.add("translate-y-full", "opacity-0")
+
+            setTimeout(() => {
+                popup.classList.add("hidden")
+            }, 500)
+
+        })
+
+    </script>
+
+    <!-----POPUP--MİLK----->
+    <div id="PopUp-milk" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
+
+        <div class=" w-[538px] h-[412px] rounded-xl relative">
+
+            <div id="popupContent-milk" class="bg-white w-[538px] h-[412px] rounded-t-xl
+    translate-y-full opacity-0
+    transition duration-500">
+
+                <button id="closePopUp-milk" class="absolute top-4 right-4 text-xl text-white cursor-pointer">
+                    ✕
+                </button>
+
+                <img src="./images/popup-explore.png" class="h-[196px] w-full object-cover">
+
+                <div class="p-6">
+
+                    <p class="font-semibold text-2xl uppercase mt-[10px]">
+                        Explore our <span class="text-[#FD9222]">new chocolate</span> first!
+                    </p>
+
+                    <div class="mt-4 flex gap-3">
+
+                        <input type="email" placeholder="Enter your email"
+                            class="border p-[14px] rounded-[30px] w-full">
+
+                        <button class="bg-[#FD9222] text-white px-6 rounded-[30px]">
+                            Subscribe
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const openBtnMilk = document.getElementById("openPopUp-milk")
+            const popupMilk = document.getElementById("PopUp-milk")
+            const popupContentMilk = document.getElementById("popupContent-milk")
+            const closeBtnMilk = document.getElementById("closePopUp-milk")
+
+            function openPopupMilk() {
+                popupMilk.classList.remove("hidden")
 
                 setTimeout(() => {
-                    popupContent.classList.remove("translate-y-full", "opacity-0")
+                    popupContentMilk.classList.remove("translate-y-full", "opacity-0")
                 }, 10)
+            }
 
-            })
-
-            closeBtn.addEventListener("click", () => {
-
-                popupContent.classList.add("translate-y-full", "opacity-0")
+            function closePopupMilk() {
+                popupContentMilk.classList.add("translate-y-full", "opacity-0")
 
                 setTimeout(() => {
-                    popup.classList.add("hidden")
+                    popupMilk.classList.add("hidden")
                 }, 500)
+            }
 
+            openBtnMilk.addEventListener("click", openPopupMilk)
+
+            closeBtnMilk.addEventListener("click", closePopupMilk)
+
+            popupMilk.addEventListener("click", (e) => {
+                if (e.target === popupMilk) {
+                    closePopupMilk()
+                }
             })
 
-        </script>
-
-
-
-
-
-
-
+        })
+    </script>
 
 </body>
+
 
 </html>
