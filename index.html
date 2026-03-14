@@ -62,9 +62,9 @@
                     <button
                         class="openPopUp-buy-now border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">Buy
                         Now</button>
-                    <button
-                        class="border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">How
-                        it's made</button>
+                    <a href="#how-its-made"><button
+                            class="border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">How
+                            it's made</button></a>
 
                 </div>
                 <div class="flex items-center gap-4 absolute right-[80px] bottom-[45px] ">
@@ -169,7 +169,7 @@
                 <div class="grid grid-cols-2 gap-[20px]">
 
                     <div class="relative"><img src="./images/review.png" alt="review" class="w-[600px] h-[400px]">
-                        <div class="absolute left-[270px] top-[180px]"><img src="./images/play.png" alt="play"></div>
+                        <div class="absolute left-[2px] top-[180px]"><img src="./images/play.png" alt="play"></div>
                     </div>
                     <div class="bg-white p-[32px] rounded-[15px] w-[560px]">
                         <h3 class="font-[600] text-[18px] leading-[24px] mb-[28px] w-[350px]">Try our chocolates today
@@ -506,7 +506,7 @@
                     });
                 </script>
 
-                <div class="flex justify-center"><button
+                <div class="flex justify-center"><button id="openPopUp-review"
                         class="border-1 border-[#FD9222] bg-[inherit] p-[14px_40px] rounded-[100px] bg-[#FD9222] text-black font-[600] text-[18px] mt-[64px] duration-400 hover:text-white hover:bg-[#FD9222] cursor-pointer">Leave
                         a review</button></div>
         </section>
@@ -601,10 +601,12 @@
 
                     <div class="mt-4 flex gap-3">
 
-                        <input type="email" placeholder="Enter your email"
-                            class="border p-[14px] rounded-[30px] w-full">
+    
 
-                        <button class="bg-[#FD9222] text-white px-6 rounded-[30px]">
+                        <label for="email"></label> <input type="email" placeholder="Enter your email"
+                            class="border border-[#1111110D] p-[14px] rounded-[30px] w-full">
+
+                        <button class="bg-[#FD9222] text-white px-6 font-[600] rounded-[30px] cursor-pointer duration-400 hover:bg-transparent hover:text-black hover:border hover:border-[#FD9222]">
                             Subscribe
                         </button>
 
@@ -1066,33 +1068,47 @@
     </script>
 
 
-    <!------------->
-    <div id="PopUp-semisweet-choc" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
+    <!------POPUP REVIEW------->
+    <div id="PopUp-review" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
 
-        <div class=" w-[270px] h-[270px] rounded-xl relative">
+        <div class=" w-[513px] h-[628px] rounded-xl relative ">
 
-            <div id="popupContent-semisweet-choc" class="bg-white w-[270px] h-[270px] rounded-t-xl
+            <div id="popupContent-review" class="bg-white w-[513px] h-[628px] rounded-t-xl
     translate-y-full opacity-0
     transition duration-500">
 
-                <button id="closePopUp-semisweet-choc"
-                    class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
+                <button id="closePopUp-review" class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
                     ✕
                 </button>
 
-                <div class="p-5">
-                    <h5 class="text-[18px] font-[600] tracking-[0.03em] uppercase leading-[18px]">semi - sweet chocolate
+                <div class="w-[513px] h-[628px] mx-[40px]">
+                    <h5
+                        class="text-[24px] leading-[28px] tracking-[0.03em] uppercase font-[600] text-center pt-[48px] mb-[40px] w-[350px] text-left">
+                        LEAVE A REVIEW ABOUT <span class="text-[#FD9222]">OUR CHOCOLATE</span>
                     </h5>
-                    <div class="flex gap-[4px] mt-[8px]">
-                        <p class="text-[10px] p-[6px_16px] bg-[#FD9222] rounded-[35px] text-white text-justify">
-                            sweet chocolate</p>
-                        <p class="text-[10px] p-[6px_16px] border border-[#FD9222] rounded-[35px]">the benefits</p>
+                    <div>
+                        <label for="name" class="text-sm font-medium"><input id="text" type="text"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-[437px] h-[66px] mb-[18px]"
+                                placeholder="Name"></label>
+
+                        <label for="email" class="text-sm font-medium"><input id="email" type="text"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-[437px]  h-[66px] mb-[18px]"
+                                placeholder="Email"></label>
+
+                        <label for="phone" class="text-sm font-medium"><input id="phone2" type="tel"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-[437px]  h-[66px] mb-[18px]"
+                                placeholder="Phone number"></label>
+
+                        <label for="text" class="text-sm font-medium"><input id="email" type="text"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-[437px]  h-[137px] mb-[18px]"
+                                placeholder="Enter text"></label>
+
+                        <button
+                            class="font-semibold text-[14px] leading-[17px] w-[100px] h-[45px] py-[14px] text-white cursor-pointer duration-400 bg-[#FD9222] rounded-[100px] hover:bg-transparent hover:text-black hover:border hover:border-[#FD9222]">Send</button>
+
+
+
                     </div>
-                    <p class="text-[14px] leading-[14px] treacking-[0.02em] font-[400] mt-[10px]">Semi-sweet chocolate
-                        has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this
-                        type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than
-                        milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is
-                        sweeter and more mellow. </p>
                 </div>
             </div>
 
@@ -1103,10 +1119,10 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
 
-            const openBtnMilk = document.getElementById("openPopUp-semisweet-choc")
-            const popupMilk = document.getElementById("PopUp-semisweet-choc")
-            const popupContentMilk = document.getElementById("popupContent-semisweet-choc")
-            const closeBtnMilk = document.getElementById("closePopUp-semisweet-choc")
+            const openBtnMilk = document.getElementById("openPopUp-review")
+            const popupMilk = document.getElementById("PopUp-review")
+            const popupContentMilk = document.getElementById("popupContent-review")
+            const closeBtnMilk = document.getElementById("closePopUp-review")
 
             function openPopupMilk() {
                 popupMilk.classList.remove("hidden")
@@ -1135,6 +1151,8 @@
             })
 
         })
+
+
     </script>
 
 
