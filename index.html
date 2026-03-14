@@ -28,15 +28,15 @@
                         <img src="./images/logo.png" alt="logo" class="w-[24px] h-[24px]">
                     </div>
                     <nav class="flex gap-[24px]">
-                        <a href="#home" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">Home</a>
-                        <a href="#how-its-made" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">How it’s
+                        <a href="#home" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] duration-300 hover:text-[#FD9222] hover:font-[600]">Home</a>
+                        <a href="#how-its-made" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] duration-300  hover:text-[#FD9222] hover:font-[600]">How it’s
                             made?</a>
-                        <a href="#our-products" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]"> Our
+                        <a href="#our-products" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]  duration-300 hover:text-[#FD9222] hover:font-[600]"> Our
                             products</a>
-                        <a href="#top-sellers" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">Top
+                        <a href="#top-sellers" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] duration-300 hover:text-[#FD9222] hover:font-[600]">Top
                             sellers</a>
                         <a href="#chocolate-is-loved"
-                            class="text-[14px] font-[500] leading-[16px] tracking-[-2%]">Chocolate is loved</a>
+                            class="text-[14px] font-[500] leading-[16px] tracking-[-2%] hover:text-[#FD9222] duration-300 hover:text-[#FD9222] hover:font-[600]">Chocolate is loved</a>
                     </nav>
                     <div class="social-media flex gap-[18px] items-center">
                         <a href=""> <img src="./images/instagram.png" alt="instagram"></a>
@@ -61,14 +61,14 @@
                     class="absolute  flex gap-4 left-[80px] bottom-[40px] text-white text-[14px] font-[600] items-center z-10">
                     <button
                         class="openPopUp-buy-now border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">Buy
-                        Now</button>
+                        now</button>
                     <a href="#how-its-made"><button
                             class="border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">How
                             it's made</button></a>
 
                 </div>
                 <div class="flex items-center gap-4 absolute right-[80px] bottom-[45px] ">
-                    <p class="text-[14px] text-white font-[500] leading-[18px] tracking-[-3%] ">scroll down</p>
+                    <p class="text-[14px] text-white font-[400] leading-[18px] tracking-[-3%] ">scroll down</p>
                     <a href="#end"><img src="./images/scroll.png" alt="scroll"
                             class="duration-400 hover:cursor-pointer hover:scale-110"></a>
                 </div>
@@ -169,7 +169,8 @@
                 <div class="grid grid-cols-2 gap-[20px]">
 
                     <div class="relative"><img src="./images/review.png" alt="review" class="w-[600px] h-[400px]">
-                        <div class="absolute left-[2px] top-[180px]"><img src="./images/play.png" alt="play"></div>
+                        <div class="absolute left-[2px] left-[255px] top-[180px]"><img src="./images/play.png"
+                                alt="play"></div>
                     </div>
                     <div class="bg-white p-[32px] rounded-[15px] w-[560px]">
                         <h3 class="font-[600] text-[18px] leading-[24px] mb-[28px] w-[350px]">Try our chocolates today
@@ -201,7 +202,7 @@
                 <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center mb-[50px]">OUR <span
                         class="text-[#FD9222] ">PRODUCTS</span></h2>
                 <!-- carousel -->
-                <div class="max-w-6xl mx-auto px-8">
+                <div>
 
                     <div class="w-full overflow-hidden">
 
@@ -209,6 +210,8 @@
 
 
                             <!-- card -->
+
+
                             <div
                                 class="card flex-[0_0_calc((100%-54px)/4)] bg-white border border-[#1111111A] rounded-2xl p-6 text-center">
                                 <img src="./images/orange-chocolate.png" class="mx-auto mb-4">
@@ -288,6 +291,7 @@
                                     UAH</span>
                             </div>
 
+
                         </div>
 
                     </div>
@@ -310,7 +314,7 @@
 
                         const dot = document.createElement("button")
 
-                        dot.className = "h-2 w-2 bg-gray-300 rounded-full transition-all duration-300 cursor-pointer"
+                        dot.className = "h-3 w-3 bg-gray-300 rounded-full transition-all duration-300 cursor-pointer"
 
                         if (i === 0) {
                             dot.classList.replace("w-2", "w-6")
@@ -351,6 +355,7 @@
 
                     }
 
+
                 </script>
             </div>
 
@@ -384,6 +389,7 @@
 
         </section>
 
+        <!-- carousel -->
         <section class="mt-[130px]">
             <div id="chocolate-is-loved" class="container">
                 <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center mb-[50px]"><span
@@ -397,7 +403,7 @@
                             class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
                             <img src="./images/victoria.jpg" alt=""
                                 class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
-                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Victoria Dobrzhanska</h3>
+                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[18px]">Victoria Dobrzhanska</h3>
                             <p class="text-[14px] text-gray-500">I love this chocolate bar. Perfect combination of light
                                 crispy
                                 wafer, covered in a thin layer chocolate.</p>
@@ -407,7 +413,7 @@
                             class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
                             <img src="./images/nazar.jpg" alt=""
                                 class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
-                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Nazar Babenko</h3>
+                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[18px]">Nazar Babenko</h3>
                             <p class="text-[14px] text-gray-500">This chocolate confection is a delight! A delight! The
                                 wafer is
                                 light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
@@ -417,7 +423,7 @@
                             class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
                             <img src="./images/olena.jpg" alt=""
                                 class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
-                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Olena Kampusch</h3>
+                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[18px]">Olena Kampusch</h3>
                             <p class="text-[14px] text-gray-500"> Chocolate is a family favourite treat. Love the
                                 delicious
                                 smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
@@ -427,7 +433,7 @@
                             class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
                             <img src="./images/oleksandr.jpg" alt=""
                                 class="absolute w-[80px] h-[80px] rounded-full object-cover top-[-43px] left-[145px]">
-                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[58px]">Oleksandr Melnyk</h3>
+                            <h3 class="font-semibold text-[18px] mb-[12px] mt-[18px]">Oleksandr Melnyk</h3>
                             <p class="text-[14px] text-gray-500">I truly enjoy these chocolates. They have the perfect
                                 balance
                                 of sweetness and rich cocoa flavor.</p>
@@ -458,7 +464,7 @@
 
                             const dot = document.createElement("button");
 
-                            dot.className = "h-2 w-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300";
+                            dot.className = "h-3 w-3 bg-gray-300 rounded-full cursor-pointer transition-all duration-300";
 
                             if (i === 0) {
                                 dot.classList.remove("w-2");
@@ -543,7 +549,7 @@
 
     <footer id="end" class="bg-[#1E1823]">
         <div class="container pt-[50px] ">
-            <div class="flex justify-between pb-[150px]">
+            <div class="flex justify-between pb-[58px]">
                 <div>
                     <h3 class="text-[28px] leading-[34px] tracking-[0.02em] font-[500] text-white  w-[378px]"><span
                             class="text-[#FD9222]">Chocolate</span> a delicious cure for a bad day</h3>
@@ -583,7 +589,7 @@
 
         <div class=" w-[538px] h-[412px] rounded-xl relative">
 
-            <div id="popupContent-explore" class="bg-white w-[538px] h-[412px] rounded-t-xl
+            <div id="popupContent-explore" class="bg-white w-[538px] h-[412px] rounded-t-xl rounded-b-xl
     translate-y-full opacity-0
     transition duration-500">
 
@@ -591,22 +597,23 @@
                     ✕
                 </button>
 
-                <img src="./images/popup-explore.png" class="h-[196px] w-full object-cover">
+                <img src="./images/popup-explore.png" class="h-[196px] w-full object-cover rounded-t-xl">
 
                 <div class="p-6">
 
                     <p class="font-semibold text-2xl uppercase mt-[10px]">
-                        Explore our <span class="text-[#FD9222]">new chocolate</span> first!
+                        Explore our <br> <span class="text-[#FD9222]">new chocolate</span> first!
                     </p>
 
-                    <div class="mt-4 flex gap-3">
+                    <div class="mt-4 flex">
 
-    
+
 
                         <label for="email"></label> <input type="email" placeholder="Enter your email"
-                            class="border border-[#1111110D] p-[14px] rounded-[30px] w-full">
+                            class="border border-[#1111110D] p-[14px] rounded-[30px] w-[313px] mr-2">
 
-                        <button class="bg-[#FD9222] text-white px-6 font-[600] rounded-[30px] cursor-pointer duration-400 hover:bg-transparent hover:text-black hover:border hover:border-[#FD9222]">
+                        <button
+                            class="bg-[#FD9222] text-white px-6 font-[600] rounded-[30px] cursor-pointer duration-400 hover:bg-transparent hover:text-black hover:border hover:border-[#FD9222]">
                             Subscribe
                         </button>
 
@@ -652,7 +659,7 @@
 
         <div class=" w-[270px] h-[270px] rounded-xl relative">
 
-            <div id="popupContent-milk" class="bg-white w-[270px] h-[270px] rounded-t-xl
+            <div id="popupContent-milk" class="bg-white w-[270px] h-[270px] rounded-xl
     translate-y-full opacity-0
     transition duration-500">
 
@@ -724,7 +731,7 @@
 
         <div class=" w-[270px] h-[270px] rounded-xl relative">
 
-            <div id="popupContent-milk-chocolate" class="bg-white w-[270px] h-[270px] rounded-t-xl
+            <div id="popupContent-milk-chocolate" class="bg-white w-[270px] h-[270px] rounded-xl
     translate-y-full opacity-0
     transition duration-500">
 
@@ -796,7 +803,7 @@
 
         <div class=" w-[270px] h-[270px] rounded-xl relative">
 
-            <div id="popupContent-nuts" class="bg-white w-[270px] h-[270px] rounded-t-xl
+            <div id="popupContent-nuts" class="bg-white w-[270px] h-[270px] rounded-xl
     translate-y-full opacity-0
     transition duration-500">
 
@@ -865,7 +872,7 @@
 
         <div class=" w-[270px] h-[270px] rounded-xl relative">
 
-            <div id="popupContent-semisweet-choc" class="bg-white w-[270px] h-[270px] rounded-t-xl
+            <div id="popupContent-semisweet-choc" class="bg-white w-[270px] h-[270px] rounded-xl
     translate-y-full opacity-0
     transition duration-500">
 
@@ -931,13 +938,14 @@
         })
     </script>
 
-    <!---POPUP BUY NOW------->
+    <!---POPUP BUY NOW ------->
 
-    <div id="PopUp-buy-now" class="hidden fixed inset-0 bg-black/65 flex items-center justify-center overflow-y-auto">
+    <div id="PopUp-buy-now"
+        class="hidden fixed inset-0 bg-black/65 flex items-center justify-center overflow-y-auto z-20">
 
-        <div class=" w-[609px] h-[600px] rounded-xl relative">
+        <div class=" w-[609px] h-[600px] rounded-xl  relative">
 
-            <div id="popupContent-buy-now" class="bg-white w-[609px] h-[1058px] rounded-t-xl
+            <div id="popupContent-buy-now" class="bg-white w-[609px] h-[1058px] rounded-xl 
     translate-y-full opacity-0
     transition duration-500">
 
@@ -1073,7 +1081,7 @@
 
         <div class=" w-[513px] h-[628px] rounded-xl relative ">
 
-            <div id="popupContent-review" class="bg-white w-[513px] h-[628px] rounded-t-xl
+            <div id="popupContent-review" class="bg-white w-[513px] h-[628px] rounded-xl
     translate-y-full opacity-0
     transition duration-500">
 
