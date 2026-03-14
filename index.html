@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simply Chocolate</title>
-    
+
     <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/css/intlTelInput.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./layout.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18/build/js/intlTelInput.min.js"></script>
 
 
 </head>
@@ -59,7 +60,7 @@
                 <div
                     class="absolute  flex gap-4 left-[80px] bottom-[40px] text-white text-[14px] font-[600] items-center z-10">
                     <button
-                        class="border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">Buy
+                        class="openPopUp-buy-now border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">Buy
                         Now</button>
                     <button
                         class="border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">How
@@ -130,25 +131,29 @@
                         our process adds up to one exceptional taste sensation.</p>
                 </div>
                 <div class="grid grid-cols-4 justify-center items-center gap-[20px]">
-                    <div id="openPopUp-milk-chocolate"  class="bg-[#FD9222] group p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700 ">
+                    <div id="openPopUp-milk-chocolate"
+                        class="bg-[#FD9222] group p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700 ">
                         <img src="./images/milk-chocolate.png" alt="milk-chocolate"
                             class="w-[200px] group-hover:scale-95 duration-400 ">
                         <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em]">MILK CHOCOLATE
                         </h3>
                     </div>
-                    <div  id="openPopUp-milk"
+                    <div id="openPopUp-milk"
                         class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700">
                         <img src="./images/milk.png" alt="milk" class="max-w-[200px] group-hover:scale-95 duration-400">
                         <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">MILK</h3>
                     </div>
-                    <div  id="openPopUp-nuts" class="bg-[#1E1823] group p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] cursor-pointer duration-300  hover:shadow-2xl hover:shadow-gray-700">
-                        <img src="./images/nuts.png" alt="nuts" class="max-w-[240px]  h-[150px] group-hover:scale-95 duration-400 ">
+                    <div id="openPopUp-nuts"
+                        class="bg-[#1E1823] group p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] cursor-pointer duration-300  hover:shadow-2xl hover:shadow-gray-700">
+                        <img src="./images/nuts.png" alt="nuts"
+                            class="max-w-[240px]  h-[150px] group-hover:scale-95 duration-400 ">
                         <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em] pt-[46px]">NUTS
                         </h3>
                     </div>
-                    <div id="openPopUp-semisweet-choc" 
+                    <div id="openPopUp-semisweet-choc"
                         class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px] cursor-pointer duration-300  hover:shadow-2xl hover:shadow-gray-700">
-                        <img src="./images/chocolate.png" alt="chocolote" class="max-w-[200px] group-hover:scale-95 duration-400 ">
+                        <img src="./images/chocolate.png" alt="chocolote"
+                            class="max-w-[200px] group-hover:scale-95 duration-400 ">
                         <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">SEMI - SWEET
                             CHOCOLATE</h3>
                     </div>
@@ -370,7 +375,7 @@
                         Mayans.
                     </p>
                     <button
-                        class="border-1 border-solid p-[14px_40px] rounded-[100px] bg-[#FD9222] text-white font-[600] text-[18px] duration-400 cursor-pointer hover:bg-white hover:text-black hover:border-[#FD9222]">Buy
+                        class="openPopUp-buy-now border-1 border-solid p-[14px_40px] rounded-[100px] bg-[#FD9222] text-white font-[600] text-[18px] duration-400 cursor-pointer hover:bg-white hover:text-black hover:border-[#FD9222]">Buy
                         now</button>
                 </div>
             </div>
@@ -868,7 +873,216 @@
                 </button>
 
                 <div class="p-5">
-                    <h5 class="text-[18px] font-[600] tracking-[0.03em] uppercase leading-[18px]">semi - sweet chocolate</h5>
+                    <h5 class="text-[18px] font-[600] tracking-[0.03em] uppercase leading-[18px]">semi - sweet chocolate
+                    </h5>
+                    <div class="flex gap-[4px] mt-[8px]">
+                        <p class="text-[10px] p-[6px_16px] bg-[#FD9222] rounded-[35px] text-white text-justify">
+                            sweet chocolate</p>
+                        <p class="text-[10px] p-[6px_16px] border border-[#FD9222] rounded-[35px]">the benefits</p>
+                    </div>
+                    <p class="text-[14px] leading-[14px] treacking-[0.02em] font-[400] mt-[10px]">Semi-sweet chocolate
+                        has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this
+                        type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than
+                        milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is
+                        sweeter and more mellow. </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const openBtnMilk = document.getElementById("openPopUp-semisweet-choc")
+            const popupMilk = document.getElementById("PopUp-semisweet-choc")
+            const popupContentMilk = document.getElementById("popupContent-semisweet-choc")
+            const closeBtnMilk = document.getElementById("closePopUp-semisweet-choc")
+
+            function openPopupMilk() {
+                popupMilk.classList.remove("hidden")
+
+                setTimeout(() => {
+                    popupContentMilk.classList.remove("translate-y-full", "opacity-0")
+                }, 10)
+            }
+
+            function closePopupMilk() {
+                popupContentMilk.classList.add("translate-y-full", "opacity-0")
+
+                setTimeout(() => {
+                    popupMilk.classList.add("hidden")
+                }, 500)
+            }
+
+            openBtnMilk.addEventListener("click", openPopupMilk)
+
+            closeBtnMilk.addEventListener("click", closePopupMilk)
+
+            popupMilk.addEventListener("click", (e) => {
+                if (e.target === popupMilk) {
+                    closePopupMilk()
+                }
+            })
+
+        })
+    </script>
+
+    <!---POPUP BUY NOW------->
+
+    <div id="PopUp-buy-now" class="hidden fixed inset-0 bg-black/65 flex items-center justify-center overflow-y-auto">
+
+        <div class=" w-[609px] h-[600px] rounded-xl relative">
+
+            <div id="popupContent-buy-now" class="bg-white w-[609px] h-[1058px] rounded-t-xl
+    translate-y-full opacity-0
+    transition duration-500">
+
+                <button id="closePopUp-buy-now" class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
+                    ✕
+                </button>
+
+                <div class="mx-auto w-[513px]">
+                    <h5 class="text-[24px] leading-[28px] tracking-[0.03em] uppercase font-[600] text-center pt-[48px]">
+                        <span class="text-[#FD9222]">Buy</span> nOW
+                    </h5>
+                    <div class="flex justify-center gap-[16px] mt-[32px] mb-[40px]">
+                        <div class="w-[160px] h-[196px]  bg-white border border-[#1111111A] rounded-[15px]">
+                            <img src="./images/buy1.png" class="w-[120px] h-[107px]  mt-[24px] mx-auto mb-[14px]">
+                            <p
+                                class="text-center border bg-[#FAFAFA] border-[#1111111A] m-[8px_27px] rounded-full font-[600] text-[14px]">
+                                100 g</p>
+                        </div>
+                        <div class="w-[160px] h-[196px]  bg-white border border-[#1111111A] rounded-[15px]">
+                            <img src="./images/buy2.png"
+                                class="w-[120px] h-[107px] object-contain mt-[24px] mx-auto mb-[14px]">
+                            <p
+                                class="text-center border bg-[#FAFAFA] border-[#1111111A] m-[8px_27px] rounded-full font-[600] text-[14px]">
+                                200 g</p>
+                        </div>
+                        <div class="w-[160px] h-[196px] bg-white border border-[#1111111A] rounded-[15px]">
+                            <img src="./images/buy3.png"
+                                class="w-[120px] h-[107px] object-contain mt-[24px] mx-auto mb-[14px]">
+                            <p
+                                class="text-center border bg-[#FAFAFA] border-[#1111111A] m-[8px_27px] rounded-full font-[600] text-[14px]">
+                                300 g</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px]">Personal information
+                        </p>
+                        <div class="flex gap-[21px] mb-[18px]">
+                            <label for="name" class="text-sm font-medium"><input id="text" type="text"
+                                    class="border border-[#1111110D] rounded-[13px] p-3 w-[246px] h-[66px]"
+                                    placeholder="Name"></label>
+                            <label for="name" class="text-sm font-medium"><input id="text" type="text"
+                                    class="border border-[#1111110D] rounded-[13px] p-3 w-[246px]  h-[66px]"
+                                    placeholder="Surname"></label>
+                        </div>
+                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px]">Email
+                        </p>
+                        <label for="email" class="text-sm font-medium"><input id="email" type="text"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-full  h-[66px]"
+                                placeholder="Email"></label>
+                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px] mt-[18px]">Phone
+                            number
+                        </p>
+                        <label for="phone" class="text-sm font-medium"><input id="phone" type="tel"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-[513px]  h-[66px]"
+                                placeholder="Phone number"></label>
+
+                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px] mt-[18px]">Card
+                            number
+                        </p>
+                        <div class="relative"><label for="tel" class="text-sm font-medium"><input id="tel" type="tel"
+                                    class="border border-[#1111110D] rounded-[13px] p-3 w-full  h-[66px]"
+                                    placeholder="Enter card"></label>
+                            <img src="./images/Mastercard.png" alt="" class="absolute right-[10px] top-[18px]">
+                        </div>
+                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px] mt-[18px]">Comment
+                        </p>
+                        <label for="email" class="text-sm font-medium"><input id="email" type="text"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-full  h-[137px]"
+                                placeholder="Enter text"></label>
+                        <button
+                            class="font-semibold text-[14px] leading-[17px] w-[133px] h-[45px] px-[40px] py-[14px] text-white cursor-pointer duration-400 bg-[#FD9222] rounded-[100px] mt-[18px] hover:bg-transparent hover:text-black hover:border hover:border-[#FD9222]">Submit</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const openBtnsMilk = document.querySelectorAll(".openPopUp-buy-now")
+            const popupMilk = document.getElementById("PopUp-buy-now")
+            const popupContentMilk = document.getElementById("popupContent-buy-now")
+            const closeBtnMilk = document.getElementById("closePopUp-buy-now")
+
+            function openPopupMilk() {
+                popupMilk.classList.remove("hidden")
+
+                setTimeout(() => {
+                    popupContentMilk.classList.remove("translate-y-full", "opacity-0")
+                }, 10)
+            }
+
+            function closePopupMilk() {
+                popupContentMilk.classList.add("translate-y-full", "opacity-0")
+
+                setTimeout(() => {
+                    popupMilk.classList.add("hidden")
+                }, 500)
+            }
+
+            openBtnsMilk.forEach(btn => {
+                btn.addEventListener("click", openPopupMilk)
+            })
+
+            closeBtnMilk.addEventListener("click", closePopupMilk)
+
+            popupMilk.addEventListener("click", (e) => {
+                if (e.target === popupMilk) {
+                    closePopupMilk()
+                }
+            })
+
+        })
+
+
+        const input = document.querySelector("#phone");
+
+        window.intlTelInput(input, {
+            initialCountry: "auto",
+            separateDialCode: true
+        });
+    </script>
+
+
+    <!------------->
+    <div id="PopUp-semisweet-choc" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
+
+        <div class=" w-[270px] h-[270px] rounded-xl relative">
+
+            <div id="popupContent-semisweet-choc" class="bg-white w-[270px] h-[270px] rounded-t-xl
+    translate-y-full opacity-0
+    transition duration-500">
+
+                <button id="closePopUp-semisweet-choc"
+                    class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
+                    ✕
+                </button>
+
+                <div class="p-5">
+                    <h5 class="text-[18px] font-[600] tracking-[0.03em] uppercase leading-[18px]">semi - sweet chocolate
+                    </h5>
                     <div class="flex gap-[4px] mt-[8px]">
                         <p class="text-[10px] p-[6px_16px] bg-[#FD9222] rounded-[35px] text-white text-justify">
                             sweet chocolate</p>
