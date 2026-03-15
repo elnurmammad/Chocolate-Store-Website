@@ -24,41 +24,76 @@
             <div class="container mt-[24px]">
                 <div class="flex items-center justify-between">
                     <div class="logo flex gap-1 items-center">
-                        <h1 class="text-[18px] font-[700] leading-[20px] tracking-[-3%]"> <em>SIMPLY</em> CHOCOLATE</h1>
+                        <h1
+                            class="text-[12px] md:text-[15px] lg:text-[18px]  font-[700] leading-[20px] tracking-[-3%]">
+                            <em>SIMPLY</em> CHOCOLATE
+                        </h1>
                         <img src="./images/logo.png" alt="logo" class="w-[24px] h-[24px]">
                     </div>
-                    <nav class="flex gap-[24px]">
-                        <a href="#home" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] duration-300 hover:text-[#FD9222] hover:font-[600]">Home</a>
-                        <a href="#how-its-made" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] duration-300  hover:text-[#FD9222] hover:font-[600]">How it’s
+                    <nav class="hidden md:hidden lg:flex gap-[24px]">
+                        <a href="#home"
+                            class="text-[14px] font-[500] leading-[16px] tracking-[-2%] duration-300 hover:text-[#FD9222] hover:font-[600]">Home</a>
+                        <a href="#how-its-made"
+                            class="text-[14px] font-[500] leading-[16px] tracking-[-2%] duration-300  hover:text-[#FD9222] hover:font-[600]">How
+                            it’s
                             made?</a>
-                        <a href="#our-products" class="text-[14px] font-[500] leading-[16px] tracking-[-2%]  duration-300 hover:text-[#FD9222] hover:font-[600]"> Our
+                        <a href="#our-products"
+                            class="text-[14px] font-[500] leading-[16px] tracking-[-2%]  duration-300 hover:text-[#FD9222] hover:font-[600]">
+                            Our
                             products</a>
-                        <a href="#top-sellers" class="text-[14px] font-[500] leading-[16px] tracking-[-2%] duration-300 hover:text-[#FD9222] hover:font-[600]">Top
+                        <a href="#top-sellers"
+                            class="text-[14px] font-[500] leading-[16px] tracking-[-2%] duration-300 hover:text-[#FD9222] hover:font-[600]">Top
                             sellers</a>
                         <a href="#chocolate-is-loved"
-                            class="text-[14px] font-[500] leading-[16px] tracking-[-2%] hover:text-[#FD9222] duration-300 hover:text-[#FD9222] hover:font-[600]">Chocolate is loved</a>
+                            class="text-[14px] font-[500] leading-[16px] tracking-[-2%] hover:text-[#FD9222] duration-300 hover:text-[#FD9222] hover:font-[600]">Chocolate
+                            is loved</a>
                     </nav>
-                    <div class="social-media flex gap-[18px] items-center">
+                    <div class="social-media hidden md:hidden lg:flex gap-[18px] items-center">
                         <a href=""> <img src="./images/instagram.png" alt="instagram"></a>
                         <a href=""> <img src="./images/twitter.png" alt="twitter"></a>
                     </div>
+
+                    <!-- menu button -->
+                    <button id="openMenu" class="lg:hidden text-2xl">
+                        ☰
+                    </button>
                 </div>
+            </div>
+            <div id="mobileMenu" class="fixed inset-0 bg-[#1E1823] text-white p-10 hidden">
+
+                <button id="closeMenu" class="absolute top-6 right-6 text-2xl">
+                    ✕
+                </button>
+
+                <ul class="space-y-6 mt-20 text-lg">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">How it's made?</a></li>
+                    <li><a href="#">Our products</a></li>
+                    <li><a href="#">Top sellers</a></li>
+                    <li><a href="#">Chocolate is loved</a></li>
+                </ul>
+
             </div>
         </section>
 
     </header>
 
+
+
     <main>
         <section>
             <div class="container mt-8 relative">
-                <img src="./images/chocolate-covered-cocoa-powder 1.png" alt="chocolote main photo"
-                    class="w-full h-full object-cover rounded-[30px]">
-                <p
-                    class="text-[28px] leading-[34px] tracking-[3%] font-[500] text-white absolute bottom-[120px] left-[80px] w-[540px]">
-                    Treat yourself or a loved one to <br> our finest ingredients for a moment of pure delight!</p>
+                <img src="./images/chocolate-covered-cocoa-powder 1.png" alt="chocolate main photo"
+                    class="w-full h-[620px] md:h-[890px] lg:h-[600px] object-cover rounded-[30px]">
+
+                <p class="text-white text-[20px] md:text-[28px] leading-[28px] md:leading-[34px] font-[500] absolute bottom-[140px] md:bottom-[120px] left-[20px] md:left-[80px] max-w-[90%] md:max-w-[540px] ">
+                    Treat yourself or a loved one to <br>
+                    our finest ingredients for a moment of pure delight!
+                </p>
+
 
                 <div
-                    class="absolute  flex gap-4 left-[80px] bottom-[40px] text-white text-[14px] font-[600] items-center z-10">
+                    class="absolute  flex gap-4 left-[20px] md:left-[80px] bottom-[40px] text-white text-[14px] font-[600] items-start md:items-center z-10">
                     <button
                         class="openPopUp-buy-now border p-[14px_40px] rounded-[100px] duration-400 ease-out hover:border-[#FD9222] hover:bg-[#FD9222] cursor-pointer ">Buy
                         now</button>
@@ -76,7 +111,7 @@
         </section>
 
         <section class="max-w-full mt-[72px] mb-[128px] bg-[#1E1823]  ">
-            <div class="container grid grid-cols-3 gap-12 p-[50px]">
+            <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-[50px]">
                 <div class="relative">
                     <img src="./images/icon1.png" alt="icon1">
                     <h3 class="font-[600] text-[18px] leading-[22px] text-white pt-[22px]">Unsurpassed taste</h3>
@@ -119,7 +154,9 @@
         <section class="mb-[130px]">
             <div class="container ">
                 <div class="w-[486px] mx-auto">
-                    <h2 class="text-[24px] leading-[28px] font-[600] text-center tracking-[0.03em] ">IT ALL ADDS UP TO
+                    <h2
+                        class="text-sm md:text-lg lg:text-2xl text-[24px] leading-[28px] font-[600] text-center tracking-[0.03em] ">
+                        IT ALL ADDS UP TO
                         ONE
                         EXCEPTIONAL <span class="text-[#FD9222]">TASTE</span> SENSATION</h2>
                     <p class="mt-[28px] mb-[50px] text-center font-[400] text-[14px] leading-[18px] tracking-[0.02em]">
@@ -130,28 +167,28 @@
                         of
                         our process adds up to one exceptional taste sensation.</p>
                 </div>
-                <div class="grid grid-cols-4 justify-center items-center gap-[20px]">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-[20px]">
                     <div id="openPopUp-milk-chocolate"
-                        class="bg-[#FD9222] group p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700 ">
+                        class="bg-[#FD9222] group p-[28px_28px_82px_28px] rounded-[15px] w-full h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700 ">
                         <img src="./images/milk-chocolate.png" alt="milk-chocolate"
-                            class="w-[200px] group-hover:scale-95 duration-400 ">
+                            class="max-w-[200px] group-hover:scale-95 duration-400 ">
                         <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em]">MILK CHOCOLATE
                         </h3>
                     </div>
                     <div id="openPopUp-milk"
-                        class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700">
+                        class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-full h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700">
                         <img src="./images/milk.png" alt="milk" class="max-w-[200px] group-hover:scale-95 duration-400">
                         <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">MILK</h3>
                     </div>
                     <div id="openPopUp-nuts"
-                        class="bg-[#1E1823] group p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] cursor-pointer duration-300  hover:shadow-2xl hover:shadow-gray-700">
+                        class="bg-[#1E1823] group p-[28px_28px_82px_28px] rounded-[15px] w-full h-[270px] cursor-pointer duration-300  hover:shadow-2xl hover:shadow-gray-700">
                         <img src="./images/nuts.png" alt="nuts"
                             class="max-w-[240px]  h-[150px] group-hover:scale-95 duration-400 ">
                         <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em] pt-[46px]">NUTS
                         </h3>
                     </div>
                     <div id="openPopUp-semisweet-choc"
-                        class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px] cursor-pointer duration-300  hover:shadow-2xl hover:shadow-gray-700">
+                        class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-full h-[270px] cursor-pointer duration-300  hover:shadow-2xl hover:shadow-gray-700">
                         <img src="./images/chocolate.png" alt="chocolote"
                             class="max-w-[200px] group-hover:scale-95 duration-400 ">
                         <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">SEMI - SWEET
@@ -166,13 +203,13 @@
             <div class="container">
                 <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center mb-[50px]">HOW IT’S <span
                         class="text-[#FD9222]">MADE?</span></h2>
-                <div class="grid grid-cols-2 gap-[20px]">
+                <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-[20px]">
 
-                    <div class="relative"><img src="./images/review.png" alt="review" class="w-[600px] h-[400px]">
+                    <div class="relative"><img src="./images/review.png" alt="review" class="w-full h-auto">
                         <div class="absolute left-[2px] left-[255px] top-[180px]"><img src="./images/play.png"
                                 alt="play"></div>
                     </div>
-                    <div class="bg-white p-[32px] rounded-[15px] w-[560px]">
+                    <div class="bg-white p-[32px] rounded-[15px] w-full h-auto">
                         <h3 class="font-[600] text-[18px] leading-[24px] mb-[28px] w-[350px]">Try our chocolates today
                             and
                             discover the perfect balance of flavor</h3>
@@ -206,7 +243,8 @@
 
                     <div class="w-full overflow-hidden">
 
-                        <div id="carousel" class="flex w-full gap-[18px] transition-transform duration-500">
+                        <div id="carousel"
+                            class="flex flex-col lg:flex-row w-full gap-[18px] transition-transform duration-500">
 
 
                             <!-- card -->
@@ -367,13 +405,13 @@
             <div class="container">
                 <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center"><span
                         class="text-[#FD9222] text-center mb-[50px]">TOP </span>SELLERS</h2>
-                <div class="grid grid-cols-3 gap-4 mt-[50px]">
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-[50px]">
                     <img src="./images/best seller1.png" alt="" class="w-[368px] h-[464px] object-cover rounded-[15px]">
                     <img src="./images/best seller2.png" alt="" class="w-[368px] h-[464px] object-cover rounded-[15px]">
                     <img src="./images/best seller3.png" alt="" class="w-[368px] h-[464px] object-cover rounded-[15px]">
                 </div>
-                <div class="flex justify-between items-start mt-8">
-                    <p class="font-normal text-[14px] leading-[18px] tracking-[-0.02em] w-[407px]">Crazy enough
+                <div class="flex flex-col lg:flex-row justify-between items-start mt-8">
+                    <p class="font-normal text-[14px] leading-[18px] tracking-[-0.02em] max-w-[407px]">Crazy enough
                         chocolate
                         originates from a bean just like the coffee bean called Cacao. Cacao has been
                         around for thousands of years and was first discovered by the Native American tribe called the
@@ -397,7 +435,8 @@
 
                 <div class="overflow-hidden pt-[43px]">
 
-                    <div id="reviewCarousel" class="flex gap-[28px] transition-transform duration-500">
+                    <div id="reviewCarousel"
+                        class="flex flex-col lg:flex-row gap-[28px] transition-transform duration-500">
 
                         <div
                             class="reviewCard flex-[0_0_calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
@@ -1164,6 +1203,23 @@
     </script>
 
 
+    <!---Mobile Popup menu--->
+
+    <script>
+
+        const openMenu = document.getElementById("openMenu")
+        const closeMenu = document.getElementById("closeMenu")
+        const mobileMenu = document.getElementById("mobileMenu")
+
+        openMenu.addEventListener("click", () => {
+            mobileMenu.classList.remove("hidden")
+        })
+
+        closeMenu.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden")
+        })
+
+    </script>
 
 </body>
 
