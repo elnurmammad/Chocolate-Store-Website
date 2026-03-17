@@ -24,7 +24,7 @@
             <div class="container mt-[24px]">
                 <div class="flex items-center justify-between">
                     <div class="logo flex gap-1 items-center">
-                        <h1 class="text-[12px] md:text-[15px] lg:text-[18px]  font-[700] leading-[20px] tracking-[-3%]">
+                        <h1 class="text-[14px] md:text-[15px] lg:text-[18px]  font-[700] leading-[20px] tracking-[-3%]">
                             <em>SIMPLY</em> CHOCOLATE
                         </h1>
                         <img src="./images/logo.png" alt="logo" class="w-[24px] h-[24px]">
@@ -53,29 +53,42 @@
                     </div>
 
                     <!-- menu button -->
-                    <button id="openMenu" class="lg:hidden text-2xl">
+                    <button id="openMenu" class="lg:hidden text-2xl cursor-pointer">
                         ☰
                     </button>
                 </div>
             </div>
-            <div id="mobileMenu" class="fixed inset-0 bg-[#1E1823] text-white p-10 hidden">
 
-                <button id="closeMenu" class="absolute top-6 right-6 text-2xl">
-                    ✕
-                </button>
-
-                <ul class="space-y-6 mt-20 text-lg">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">How it's made?</a></li>
-                    <li><a href="#">Our products</a></li>
-                    <li><a href="#">Top sellers</a></li>
-                    <li><a href="#">Chocolate is loved</a></li>
-                </ul>
-
-            </div>
         </section>
 
     </header>
+    <div id="mobileMenu"
+        class="fixed right-[0px] top-[0px] bg-[#1E1823] w-[200px] md:w-[290px] h-[700px] text-white p-15 hidden z-100">
+
+        <button id="closeMenu" class="absolute top-4 right-6 text-2xl duration-500 hover:scale-120 cursor-pointer">
+            ✕
+        </button>
+
+        <ul class="space-y-6 mt-10 text-lg ">
+            <li class="duration-450 text-sm md:text-lg hover:text-[#FD9222]"><a href="#home">Home</a></li>
+            <li class="duration-450 text-sm md:text-lg hover:text-[#FD9222]"><a href="#how-its-made">How it's made?</a>
+            </li>
+            <li class="duration-450 text-sm md:text-lg hover:text-[#FD9222]"><a href="#our-products">Our products</a>
+            </li>
+            <li class="duration-450 text-sm md:text-lg hover:text-[#FD9222]"><a href="#top-sellers">Top sellers</a></li>
+            <li class="duration-450 text-sm md:text-lg hover:text-[#FD9222]"><a href="#chocolate-is-loved">Chocolate is
+                    loved</a>
+            </li>
+        </ul>
+
+        <div class="social-media flex gap-[18px] items-center mt-[300px] -ml-[32px]">
+            <a href=""> <img src="./images/instagram-footer.png" alt="instagram"></a>
+            <a href=""> <img src="./images/twitter-footer.png" alt="twitter"></a>
+        </div>
+
+
+
+    </div>
 
 
 
@@ -86,9 +99,9 @@
                     class="w-full h-[620px] md:h-[890px] lg:h-[600px] object-cover rounded-[30px]">
 
                 <p
-                    class="w-[250px] md:w-[490px] lg:w-[540px]  text-[20px] md:text-[28px] lg:text-[28px] leading-[34px] tracking-[3%] font-[500] text-white absolute left-[55px] bottom-[150px] md:bottom-[120px] md:left-[80px] lg:bottom-[120px] lg:left-[80px] ">
-                    Treat yourself or a loved one to <br>
-                    our finest ingredients for a moment of pure delight!
+                    class="w-[250px]  md:w-[540px] lg:w-[540px]  text-[20px] md:text-[28px] lg:text-[28px] leading-[34px] tracking-[3%] font-[500] text-white absolute left-[55px] bottom-[150px] md:bottom-[120px] md:left-[80px] lg:bottom-[120px] lg:left-[80px] ">
+                    Treat yourself or a loved one <br> to
+                    our finest ingredients for a <br> moment of pure delight!
                 </p>
 
                 <div
@@ -124,7 +137,7 @@
                         experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed
                         Taste
                         and discover a new level of chocolate bliss.</p>
-                    <div class="h-[124px] w-[1px] bg-[#FFFFFF80] absolute left-[320px] bottom-[60px]"></div>
+                    <div class="w-[0px] h-[124px] lg:w-[1px] bg-[#FFFFFF80] absolute left-[320px] bottom-[60px]"></div>
                 </div>
 
                 <div class="relative">
@@ -136,7 +149,7 @@
                         chocolate without breaking the bank with Simply Chocolate's selection of
                         affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing
                         taste or quality. Browse our selection and indulge in affordable luxury today.</p>
-                    <div class="h-[124px] w-[1px] bg-[#FFFFFF80] absolute left-[320px] bottom-[60px]"></div>
+                    <div class="w-[0px] h-[124px] lg:w-[1px] bg-[#FFFFFF80] absolute left-[320px] bottom-[60px]"></div>
 
                 </div>
                 <div>
@@ -154,89 +167,133 @@
         </section>
 
         <section class="mb-[130px]">
-            <div class="container ">
-                <div class="sm:w-[335px] md:w-[486px] lg:w-[486px] mx-auto">
-                    <h2
-                        class="text-sm md:text-lg lg:text-2xl text-[24px] leading-[28px] font-[600] text-center tracking-[0.03em] ">
-                        IT ALL ADDS UP TO
-                        ONE
-                        EXCEPTIONAL <span class="text-[#FD9222]">TASTE</span> SENSATION</h2>
-                    <p class="mt-[28px] mb-[50px] text-center font-[400] text-[14px] leading-[18px] tracking-[0.02em]">
-                        At
-                        Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From
-                        the
-                        sourcing of the finest ingredients to the careful crafting of each individual piece, every step
-                        of
-                        our process adds up to one exceptional taste sensation.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-[20px]">
-                    <div id="openPopUp-milk-chocolate"
-                        class="bg-[#FD9222] group p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700 ">
-                        <img src="./images/milk-chocolate.png" alt="milk-chocolate"
-                            class="max-w-[200px] group-hover:scale-95 duration-400 ">
-                        <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em]">MILK CHOCOLATE
-                        </h3>
-                    </div>
-                    <div id="openPopUp-milk"
-                        class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700">
-                        <img src="./images/milk.png" alt="milk" class="max-w-[200px] group-hover:scale-95 duration-400">
-                        <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">MILK</h3>
-                    </div>
-                    <div id="openPopUp-nuts"
-                        class="bg-[#1E1823] group p-[28px_28px_82px_28px] rounded-[15px] w-[270px] h-[270px] cursor-pointer duration-300  hover:shadow-2xl hover:shadow-gray-700">
-                        <img src="./images/nuts.png" alt="nuts"
-                            class="max-w-[240px]  h-[150px] group-hover:scale-95 duration-400 ">
-                        <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em] pt-[46px]">NUTS
-                        </h3>
-                    </div>
-                    <div id="openPopUp-semisweet-choc"
-                        class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border-1 border-solid border-[#FD9222] w-[270px] h-[270px] cursor-pointer duration-300  hover:shadow-2xl hover:shadow-gray-700">
-                        <img src="./images/chocolate.png" alt="chocolote"
-                            class="max-w-[200px] group-hover:scale-95 duration-400 ">
-                        <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">SEMI - SWEET
-                            CHOCOLATE</h3>
-                    </div>
-                </div>
-            </div>
+            <div class="container">
 
+                <div class="max-w-[486px] mx-auto">
+                    <h2
+                        class="text-[18px] md:text-[20px] lg:text-[24px] leading-[28px] font-[600] text-center tracking-[0.03em]">
+                        IT ALL ADDS UP TO ONE EXCEPTIONAL
+                        <span class="text-[#FD9222]">TASTE</span> SENSATION
+                    </h2>
+
+                    <p class="mt-[28px] mb-[50px] text-center font-[400] text-[14px] leading-[18px] tracking-[0.02em]">
+                        At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details.
+                        From the sourcing of the finest ingredients to the careful crafting of each individual piece,
+                        every step of our process adds up to one exceptional taste sensation.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[20px] justify-items-center">
+
+                    <div id="openPopUp-milk-chocolate"
+                        class="bg-[#FD9222] group p-[28px_28px_82px_28px] rounded-[15px] w-full max-w-[270px] h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700">
+
+                        <img src="./images/milk-chocolate.png" alt="milk-chocolate"
+                            class="max-w-[200px] group-hover:scale-95 duration-300">
+
+                        <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em]">
+                            MILK CHOCOLATE
+                        </h3>
+                    </div>
+
+
+                    <div id="openPopUp-milk"
+                        class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border border-[#FD9222] w-full max-w-[270px] h-[270px] duration-300 cursor-pointer hover:shadow-2xl hover:shadow-gray-700">
+
+                        <img src="./images/milk.png" alt="milk" class="max-w-[200px] group-hover:scale-95 duration-300">
+
+                        <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">
+                            MILK
+                        </h3>
+                    </div>
+
+
+                    <div id="openPopUp-nuts"
+                        class="bg-[#1E1823] group p-[28px_28px_82px_28px] rounded-[15px] w-full max-w-[270px] h-[270px] cursor-pointer duration-300 hover:shadow-2xl hover:shadow-gray-700">
+
+                        <img src="./images/nuts.png" alt="nuts"
+                            class="max-w-[240px] h-[150px] group-hover:scale-95 duration-300">
+
+                        <h3 class="text-[14px] text-white leading-[18px] font-[600] tracking-[0.02em] pt-[46px]">
+                            NUTS
+                        </h3>
+                    </div>
+
+
+                    <div id="openPopUp-semisweet-choc"
+                        class="bg-white group p-[28px_28px_82px_28px] rounded-[15px] border border-[#FD9222] w-full max-w-[270px] h-[270px] cursor-pointer duration-300 hover:shadow-2xl hover:shadow-gray-700">
+
+                        <img src="./images/chocolate.png" alt="chocolate"
+                            class="max-w-[200px] group-hover:scale-95 duration-300">
+
+                        <h3 class="text-[14px] text-black leading-[18px] font-[600] tracking-[0.02em]">
+                            SEMI - SWEET CHOCOLATE
+                        </h3>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
 
         <section id="how-its-made" class="mb-[130px]">
             <div class="container">
-                <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center mb-[50px]">HOW IT’S <span
-                        class="text-[#FD9222]">MADE?</span></h2>
-                <div class=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-[20px] justify-items-center">
 
-                    <div class="relative"><img src="./images/review.png" alt="review"
-                            class="w-[335px] h-[500px] md:w-[560px] md:h-[400px] lg:w-[600px] lg:h-[400px]">
-                        <div class="absolute inset-0 flex items-center justify-center"><img src="./images/play.png"
-                                alt="play"></div>
+                <h2 class="text-[24px] leading-[28px] font-[600] tracking-[0.03em] text-center mb-[50px]">
+                    HOW IT’S <span class="text-[#FD9222]">MADE?</span>
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-[20px] items-start">
+
+                    <!-- VIDEO -->
+                    <div class="relative w-full max-w-[600px] ">
+                        <img src="./images/review.png" alt="review"
+                            class="w-full h-[500px] lg:h-[400px] rounded-[15px]">
+
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img src="./images/play.png" alt="play">
+                        </div>
                     </div>
-                    <div
-                        class="bg-white p-[32px] rounded-[15px] w-[280px]  md:w-[560px] md:h-[400px] lg:w-[560px] lg:h-[400px]">
-                        <h3 class="font-[600] text-[18px] leading-[24px] mb-[28px]  w-[260px] lg:w-[350px]">Try our
-                            chocolates today
-                            and
-                            discover the perfect balance of flavor</h3>
-                        <ul class="list-disc list-inside font-[400] text-[14px] leading-[18px] tracking-[-0.02em]">
-                            <li class="mb-[24px]">Heat the milk in a saucepan without bringing it to a boil. Add sugar
-                                and
-                                cocoa powder.</li>
-                            <li class="mb-[24px]">At the same time, prepare a water bath. Melt the butter on it.</li>
-                            <li class="mb-[24px]">"Mix" the milk mixture and already liquid butter. Mix thoroughly with
-                                a
-                                silicone spatula so
-                                that
-                                the mass becomes uniform and silky.</li>
-                            <li class="mb-[24px]">Heat the mixture over low heat, letting it barely boil.</li>
-                            <li class="mb-[24px]">Pour the chocolate into special containers (can be replaced with ice
-                                molds). Allow to cool
-                                and
-                                harden.</li>
+
+                    <!-- TEXT -->
+                    <div class="bg-white p-[32px] rounded-[15px] w-full max-w-[560px] min-h-[400px]">
+
+                        <h3 class="font-[600] text-[18px] leading-[24px] mb-[28px] max-w-[350px]">
+                            Try our chocolates today and discover the perfect balance of flavor
+                        </h3>
+
+                        <ul class="list-disc pl-5 text-[14px] leading-[18px]">
+
+                            <li class="mb-[24px]">
+                                Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+                            </li>
+
+                            <li class="mb-[24px]">
+                                At the same time, prepare a water bath. Melt the butter on it.
+                            </li>
+
+                            <li class="mb-[24px]">
+                                Mix the milk mixture and liquid butter thoroughly with a silicone spatula.
+                            </li>
+
+                            <li class="mb-[24px]">
+                                Heat the mixture over low heat, letting it barely boil.
+                            </li>
+
+                            <li>
+                                Pour the chocolate into molds and allow it to cool and harden.
+                            </li>
+
                         </ul>
+
                     </div>
+
                 </div>
             </div>
+        </section>
+
+        </div>
+        </div>
         </section>
 
         <section>
@@ -248,7 +305,8 @@
 
                     <div class="w-full overflow-hidden">
 
-                        <div id="carousel" class="flex w-full gap-[18px] transition-transform duration-500">
+                        <div id="carousel"
+                            class="flex w-full gap-[18px] transition-transform duration-500 cursor-pointer">
 
 
                             <!-- card -->
@@ -295,8 +353,8 @@
                             </div>
 
                             <div
-                                class="card min-w-full md:min-w-[calc((100%-18px)/2)] w-[335px] lg:w-[270px] bg-white border border-[#1111111A] rounded-2xl p-6 text-center">
-                                <img src="./images/classic chocolate.png" class=" mb-4">
+                                class="card min-w-full md:min-w-[calc((100%-18px)/2)] lg:min-w-[calc((100%-54px)/4)] bg-white border border-[#1111111A] rounded-2xl p-6 text-center">
+                                <img src="./images/classic chocolate.png" class="mx-auto mb-4">
                                 <h3 class="font-semibold mt-2">CLASSIC</h3>
                                 <p class="text-gray-400 text-sm mb-4 mt-1">Milk chocolate</p>
                                 <span
@@ -349,17 +407,12 @@
                     const dotsContainer = document.getElementById("dots")
 
                     let index = 0
+                    let activeDot = 0
 
                     function getVisibleCards() {
 
-                        if (window.innerWidth < 768) {
-                            return 1
-                        }
-
-                        if (window.innerWidth < 1024) {
-                            return 2
-                        }
-
+                        if (window.innerWidth < 768) return 1
+                        if (window.innerWidth < 1024) return 2
                         return 4
 
                     }
@@ -370,6 +423,8 @@
 
                     }
 
+                    /* ---------- DOTS ---------- */
+
                     cards.forEach((_, i) => {
 
                         const dot = document.createElement("button")
@@ -377,21 +432,16 @@
                         dot.className = "h-3 w-3 bg-gray-300 rounded-full transition-all duration-300 cursor-pointer"
 
                         if (i === 0) {
-
                             dot.classList.replace("bg-gray-300", "bg-orange-400")
                             dot.classList.replace("w-3", "w-6")
-
                         }
 
                         dot.addEventListener("click", () => {
 
-                            index = i
+                            activeDot = i
+                            index = Math.min(i, getMaxIndex())
 
-                            if (index > getMaxIndex()) {
-                                index = getMaxIndex()
-                            }
-
-                            updateCarousel(i)
+                            updateCarousel()
 
                         })
 
@@ -399,7 +449,9 @@
 
                     })
 
-                    function updateCarousel(activeDotIndex) {
+                    /* ---------- UPDATE ---------- */
+
+                    function updateCarousel() {
 
                         const gap = 18
                         const cardWidth = cards[0].offsetWidth + gap
@@ -413,12 +465,16 @@
 
                         })
 
-                        const active = document.querySelectorAll("#dots button")[activeDotIndex]
+                        const active = document.querySelectorAll("#dots button")[activeDot]
 
-                        active.classList.remove("w-3")
-                        active.classList.add("w-6", "bg-orange-400")
+                        if (active) {
+                            active.classList.remove("w-3")
+                            active.classList.add("w-6", "bg-orange-400")
+                        }
 
                     }
+
+                    /* ---------- RESIZE ---------- */
 
                     window.addEventListener("resize", () => {
 
@@ -426,10 +482,50 @@
                             index = getMaxIndex()
                         }
 
-                        updateCarousel(index)
+                        updateCarousel()
 
                     })
 
+                    /* ---------- SWIPE / DRAG ---------- */
+
+                    let startX = 0
+                    let endX = 0
+
+                    carousel.addEventListener("touchstart", e => {
+                        startX = e.touches[0].clientX
+                    })
+
+                    carousel.addEventListener("touchend", e => {
+                        endX = e.changedTouches[0].clientX
+                        handleSwipe()
+                    })
+
+                    carousel.addEventListener("mousedown", e => {
+                        startX = e.clientX
+                    })
+
+                    carousel.addEventListener("mouseup", e => {
+                        endX = e.clientX
+                        handleSwipe()
+                    })
+
+                    function handleSwipe() {
+
+                        const threshold = 50
+
+                        if (startX - endX > threshold && activeDot < cards.length - 1) {
+                            activeDot++
+                        }
+
+                        if (endX - startX > threshold && activeDot > 0) {
+                            activeDot--
+                        }
+
+                        index = Math.min(activeDot, getMaxIndex())
+
+                        updateCarousel()
+
+                    }
 
                 </script>
             </div>
@@ -472,7 +568,7 @@
 
                 <div class="overflow-hidden pt-[43px]">
 
-                    <div id="reviewCarousel" class="flex gap-[28px] transition-transform duration-500">
+                    <div id="reviewCarousel" class="flex gap-[28px] transition-transform duration-500 cursor-pointer">
 
                         <div
                             class="reviewCard min-w-full md:min-w-[calc((100%-28px)/2)] lg:min-w-[calc((100%-56px)/3)] bg-white rounded-[15px] border border-[#1111111A] p-[24px] text-center relative">
@@ -530,17 +626,12 @@
                         const dotsContainer = document.getElementById("reviewDots")
 
                         let index = 0
+                        let activeDot = 0
 
                         function getVisibleCards() {
 
-                            if (window.innerWidth < 768) {
-                                return 1
-                            }
-
-                            if (window.innerWidth < 1024) {
-                                return 2
-                            }
-
+                            if (window.innerWidth < 768) return 1
+                            if (window.innerWidth < 1024) return 2
                             return 3
 
                         }
@@ -548,6 +639,8 @@
                         function getMaxIndex() {
                             return cards.length - getVisibleCards()
                         }
+
+                        /* -------- DOTS -------- */
 
                         cards.forEach((_, i) => {
 
@@ -562,13 +655,10 @@
 
                             dot.addEventListener("click", () => {
 
-                                index = i
+                                activeDot = i
+                                index = Math.min(i, getMaxIndex())
 
-                                if (index > getMaxIndex()) {
-                                    index = getMaxIndex()
-                                }
-
-                                updateCarousel(i)
+                                updateCarousel()
 
                             })
 
@@ -576,7 +666,9 @@
 
                         })
 
-                        function updateCarousel(activeDotIndex) {
+                        /* -------- UPDATE -------- */
+
+                        function updateCarousel() {
 
                             const gap = 28
                             const cardWidth = cards[0].offsetWidth + gap
@@ -590,7 +682,7 @@
 
                             })
 
-                            const active = document.querySelectorAll("#reviewDots button")[activeDotIndex]
+                            const active = document.querySelectorAll("#reviewDots button")[activeDot]
 
                             if (active) {
                                 active.classList.remove("w-3")
@@ -599,15 +691,62 @@
 
                         }
 
+                        /* -------- RESIZE -------- */
+
                         window.addEventListener("resize", () => {
 
                             if (index > getMaxIndex()) {
                                 index = getMaxIndex()
                             }
 
-                            updateCarousel(index)
+                            updateCarousel()
 
                         })
+
+                        /* -------- SWIPE / DRAG -------- */
+
+                        let startX = 0
+                        let endX = 0
+
+                        carousel.addEventListener("touchstart", e => {
+                            startX = e.touches[0].clientX
+                        })
+
+                        carousel.addEventListener("touchend", e => {
+                            endX = e.changedTouches[0].clientX
+                            handleSwipe()
+                        })
+
+                        carousel.addEventListener("mousedown", e => {
+                            startX = e.clientX
+                        })
+
+                        carousel.addEventListener("mouseup", e => {
+                            endX = e.clientX
+                            handleSwipe()
+                        })
+
+                        function handleSwipe() {
+
+                            const threshold = 50
+
+                            if (startX - endX > threshold && activeDot < cards.length - 1) {
+                                activeDot++
+                            }
+
+                            if (endX - startX > threshold && activeDot > 0) {
+                                activeDot--
+                            }
+
+                            index = Math.min(activeDot, getMaxIndex())
+
+                            updateCarousel()
+
+                        }
+
+                        /* -------- INIT -------- */
+
+                        updateCarousel()
 
                     })
                 </script>
@@ -637,7 +776,7 @@
                             each
                             piece is a work of art that is sure to please.</p>
                         <div class="flex justify-center"><button id="openPopUp-explore"
-                                class="border-1 border-[#FD9222]  p-[7px_20px] lg:p-[14px_40px] rounded-[100px] bg-[#FD9222] text-white font-[600] text-[14px] lg:text-[18px] mt-[24px] duration-400 [72px] cursor-pointer hover:bg-[transparent]">Subscribe</button>
+                                class="border-1 border-[#FD9222]  p-[14px_20px] lg:p-[14px_30px] rounded-[100px] bg-[#FD9222] text-white font-[600] text-[14px] lg:text-[18px] mt-[24px] duration-400 [72px] cursor-pointer hover:bg-[transparent]">Subscribe</button>
                         </div>
 
                     </div>
@@ -658,8 +797,8 @@
                 </div>
                 <div class="flex flex-col md:flex-row lg:flex-row items-start gap-[63px]">
                     <div>
-                        <p class="text-[14px] leading-[18px] font-[500] text-white mb-[14px]">Contact us</p>
-                        <p class="text-[14px] leading-[18px] font-[500] text-white mb-[4px]">+380 (68) 443-94-26</p>
+                        <p class="text-[14px] leading-[18px] font-[500] text-white mb-[14px] mt-[10px] lg:mt-[0px]">Contact us</p>
+                        <p class="text-[14px] leading-[18px] font-[500] text-white mb-[4px] mt-[5px] lg:mt-[0px]">+380 (68) 443-94-26</p>
                         <p class="text-[14px] leading-[18px] font-[500] text-white">simplychoc@gmail.com</p>
                     </div>
 
@@ -689,33 +828,34 @@
     <!-----POPUP-EXPLORE----->
     <div id="PopUp-explore" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
 
-        <div class=" w-[538px] h-[412px] rounded-xl relative">
+        <div class="w-[311px] h-[350px] lg:w-[538px] lg:h-[412px] rounded-xl relative">
 
-            <div id="popupContent-explore" class="bg-white w-[538px] h-[412px] rounded-t-xl rounded-b-xl
+            <div id="popupContent-explore" class="bg-white w-[311px] h-[350px] lg:w-[538px] lg:h-[412px] rounded-t-xl rounded-b-xl
     translate-y-full opacity-0
     transition duration-500">
 
-                <button id="closePopUp-explore" class="absolute top-4 right-4 text-xl text-white cursor-pointer">
+                <button id="closePopUp-explore"
+                    class="absolute top-4 right-4 text-xl duration-400 text-white cursor-pointer hover:scale-120">
                     ✕
                 </button>
 
-                <img src="./images/popup-explore.png" class="h-[196px] w-full object-cover rounded-t-xl">
+                <img src="./images/popup-explore.png" class="h-[169px] lg:h-[196px] w-full object-cover rounded-t-xl">
 
-                <div class="p-6">
+                <div class=" p-5 lg:p-10">
 
-                    <p class="font-semibold text-2xl uppercase mt-[10px]">
+                    <p class="font-semibold text-md lg:text-2xl  uppercase mt-[5px] lg:mt-[10px]">
                         Explore our <br> <span class="text-[#FD9222]">new chocolate</span> first!
                     </p>
 
-                    <div class="mt-4 flex">
+                    <div class="mt-4 flex flex-row lg:flex-row">
 
 
 
                         <label for="email"></label> <input type="email" placeholder="Enter your email"
-                            class="border border-[#1111110D] p-[14px] rounded-[30px] w-[313px] mr-2">
+                            class="border border-[#1111110D] p-[7px] lg:p-[14px] rounded-[30px] mr-2 w-[180px] lg:w-[313px]">
 
                         <button
-                            class="bg-[#FD9222] text-white px-6 font-[600] rounded-[30px] cursor-pointer duration-400 hover:bg-transparent hover:text-black hover:border hover:border-[#FD9222]">
+                            class="bg-[#FD9222] text-white text-sm lg:text-xl p-[14px_10px] lg:p-[17px_20px] mt-[10px] lg:mt-[0px] font-[600] rounded-[30px] cursor-pointer duration-400 hover:bg-transparent hover:text-black hover:border hover:border-[#FD9222]">
                             Subscribe
                         </button>
 
@@ -765,7 +905,8 @@
     translate-y-full opacity-0
     transition duration-500">
 
-                <button id="closePopUp-milk" class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
+                <button id="closePopUp-milk"
+                    class="absolute duration-400 hover:scale-120 top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
                     ✕
                 </button>
 
@@ -838,7 +979,7 @@
     transition duration-500">
 
                 <button id="closePopUp-milk-chocolate"
-                    class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
+                    class="absolute duration-400 hover:scale-120 top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
                     ✕
                 </button>
 
@@ -909,7 +1050,8 @@
     translate-y-full opacity-0
     transition duration-500">
 
-                <button id="closePopUp-nuts" class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
+                <button id="closePopUp-nuts"
+                    class="absolute duration-400 hover:scale-120 top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
                     ✕
                 </button>
 
@@ -979,7 +1121,7 @@
     transition duration-500">
 
                 <button id="closePopUp-semisweet-choc"
-                    class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
+                    class="absolute duration-400 hover:scale-120 top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
                     ✕
                 </button>
 
@@ -1042,90 +1184,99 @@
 
     <!---POPUP BUY NOW ------->
 
-    <div id="PopUp-buy-now"
-        class="hidden fixed inset-0 bg-black/65 flex items-center justify-center overflow-y-auto z-20">
+    <div id="PopUp-buy-now" class="hidden fixed inset-0 bg-black/65 flex items-center justify-center z-50 p-4">
 
-        <div class=" w-[609px] h-[600px] rounded-xl  relative">
+        <div class="w-full max-w-[609px]">
 
-            <div id="popupContent-buy-now" class="bg-white w-[609px] h-[1058px] rounded-xl 
-    translate-y-full opacity-0
-    transition duration-500">
+            <div id="popupContent-buy-now"
+                class="bg-white rounded-xl translate-y-full opacity-0 transition-all duration-500 max-h-[90vh] overflow-y-auto p-6 md:p-8 relative">
 
-                <button id="closePopUp-buy-now" class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
+                <button id="closePopUp-buy-now"
+                    class="absolute duration-400 hover:scale-120 top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
                     ✕
                 </button>
 
-                <div class="mx-auto w-[513px]">
-                    <h5 class="text-[24px] leading-[28px] tracking-[0.03em] uppercase font-[600] text-center pt-[48px]">
-                        <span class="text-[#FD9222]">Buy</span> nOW
-                    </h5>
-                    <div class="flex justify-center gap-[16px] mt-[32px] mb-[40px]">
-                        <div class="w-[160px] h-[196px]  bg-white border border-[#1111111A] rounded-[15px]">
-                            <img src="./images/buy1.png" class="w-[120px] h-[107px]  mt-[24px] mx-auto mb-[14px]">
-                            <p
-                                class="text-center border bg-[#FAFAFA] border-[#1111111A] m-[8px_27px] rounded-full font-[600] text-[14px]">
-                                100 g</p>
-                        </div>
-                        <div class="w-[160px] h-[196px]  bg-white border border-[#1111111A] rounded-[15px]">
-                            <img src="./images/buy2.png"
-                                class="w-[120px] h-[107px] object-contain mt-[24px] mx-auto mb-[14px]">
-                            <p
-                                class="text-center border bg-[#FAFAFA] border-[#1111111A] m-[8px_27px] rounded-full font-[600] text-[14px]">
-                                200 g</p>
-                        </div>
-                        <div class="w-[160px] h-[196px] bg-white border border-[#1111111A] rounded-[15px]">
-                            <img src="./images/buy3.png"
-                                class="w-[120px] h-[107px] object-contain mt-[24px] mx-auto mb-[14px]">
-                            <p
-                                class="text-center border bg-[#FAFAFA] border-[#1111111A] m-[8px_27px] rounded-full font-[600] text-[14px]">
-                                300 g</p>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px]">Personal information
-                        </p>
-                        <div class="flex gap-[21px] mb-[18px]">
-                            <label for="name" class="text-sm font-medium"><input id="text" type="text"
-                                    class="border border-[#1111110D] rounded-[13px] p-3 w-[246px] h-[66px]"
-                                    placeholder="Name"></label>
-                            <label for="name" class="text-sm font-medium"><input id="text" type="text"
-                                    class="border border-[#1111110D] rounded-[13px] p-3 w-[246px]  h-[66px]"
-                                    placeholder="Surname"></label>
-                        </div>
-                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px]">Email
-                        </p>
-                        <label for="email" class="text-sm font-medium"><input id="email" type="text"
-                                class="border border-[#1111110D] rounded-[13px] p-3 w-full  h-[66px]"
-                                placeholder="Email"></label>
-                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px] mt-[18px]">Phone
-                            number
-                        </p>
-                        <label for="phone" class="text-sm font-medium"><input id="phone" type="tel"
-                                class="border border-[#1111110D] rounded-[13px] p-3 w-[513px]  h-[66px]"
-                                placeholder="Phone number"></label>
+                <h5 class="text-[24px] leading-[28px] tracking-[0.03em] uppercase font-[600] text-center pt-[20px]">
+                    <span class="text-[#FD9222]">Buy</span> now
+                </h5>
 
-                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px] mt-[18px]">Card
-                            number
-                        </p>
-                        <div class="relative"><label for="tel" class="text-sm font-medium"><input id="tel" type="tel"
-                                    class="border border-[#1111110D] rounded-[13px] p-3 w-full  h-[66px]"
-                                    placeholder="Enter card"></label>
-                            <img src="./images/Mastercard.png" alt="" class="absolute right-[10px] top-[18px]">
-                        </div>
-                        <p class="text-[14px] leading-[18px] tracking-[0.02em] font-[500] mb-[8px] mt-[18px]">Comment
-                        </p>
-                        <label for="email" class="text-sm font-medium"><input id="email" type="text"
-                                class="border border-[#1111110D] rounded-[13px] p-3 w-full  h-[137px]"
-                                placeholder="Enter text"></label>
-                        <button
-                            class="font-semibold text-[14px] leading-[17px] w-[133px] h-[45px] px-[40px] py-[14px] text-white cursor-pointer duration-400 bg-[#FD9222] rounded-[100px] mt-[18px] hover:bg-transparent hover:text-black hover:border hover:border-[#FD9222]">Submit</button>
+                <!-- CHOCOLATE CARDS -->
 
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 mb-10">
+
+                    <div
+                        class="h-[196px] bg-white border border-[#1111111A] rounded-[15px] flex flex-col items-center justify-center">
+                        <img src="./images/buy1.png" class="w-[120px] h-[107px] object-contain mb-3">
+                        <p class="border bg-[#FAFAFA] border-[#1111111A] px-6 py-1 rounded-full font-[600] text-[14px]">
+                            100 g
+                        </p>
                     </div>
+
+                    <div
+                        class="h-[196px] bg-white border border-[#1111111A] rounded-[15px] flex flex-col items-center justify-center">
+                        <img src="./images/buy2.png" class="w-[120px] h-[107px] object-contain mb-3">
+                        <p class="border bg-[#FAFAFA] border-[#1111111A] px-6 py-1 rounded-full font-[600] text-[14px]">
+                            200 g
+                        </p>
+                    </div>
+
+                    <div
+                        class="h-[196px] bg-white border border-[#1111111A] rounded-[15px] flex flex-col items-center justify-center">
+                        <img src="./images/buy3.png" class="w-[120px] h-[107px] object-contain mb-3">
+                        <p class="border bg-[#FAFAFA] border-[#1111111A] px-6 py-1 rounded-full font-[600] text-[14px]">
+                            300 g
+                        </p>
+                    </div>
+
                 </div>
+
+                <!-- FORM -->
+
+                <p class="text-[14px] font-[500] mb-2">Personal information</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+
+                    <input type="text" placeholder="Name"
+                        class="border border-[#1111110D] rounded-[13px] p-3 w-full h-[56px]">
+
+                    <input type="text" placeholder="Surname"
+                        class="border border-[#1111110D] rounded-[13px] p-3 w-full h-[56px]">
+
+                </div>
+
+                <p class="text-[14px] font-[500] mb-2">Email</p>
+
+                <input type="email" placeholder="Email"
+                    class="border border-[#1111110D] rounded-[13px] p-3 w-full h-[56px] mb-4">
+
+                <p class="text-[14px] font-[500] mb-2">Phone number</p>
+
+                <input id="phone" type="tel" placeholder="Phone number"
+                    class="border border-[#1111110D] rounded-[13px] p-3 w-full h-[56px] mb-4">
+
+                <p class="text-[14px] font-[500] mb-2">Card number</p>
+
+                <div class="relative mb-4">
+
+                    <input type="text" placeholder="Enter card"
+                        class="border border-[#1111110D] rounded-[13px] p-3 w-full h-[56px]">
+
+                    <img src="./images/Mastercard.png" class="absolute right-3 top-[14px] w-[40px]">
+
+                </div>
+
+                <p class="text-[14px] font-[500] mb-2">Comment</p>
+
+                <textarea placeholder="Enter text"
+                    class="border border-[#1111110D] rounded-[13px] p-3 w-full h-[120px] mb-4"></textarea>
+
+                <button
+                    class=" w-[109px] lg:w-[133px] h-[45px] text-white bg-[#FD9222] rounded-[100px] font-semibold duration-400 cursor-pointer hover:bg-transparent hover:text-black hover:border hover:border-[#FD9222] transition">
+                    Submit
+                </button>
+
             </div>
-
         </div>
-
     </div>
 
 
@@ -1181,36 +1332,37 @@
     <!------POPUP REVIEW------->
     <div id="PopUp-review" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
 
-        <div class=" w-[513px] h-[628px] rounded-xl relative ">
+        <div class="w-[311px] h-[471px] lg:w-[513px] lg:h-[628px] rounded-xl relative ">
 
-            <div id="popupContent-review" class="bg-white w-[513px] h-[628px] rounded-xl
+            <div id="popupContent-review" class="bg-white w-[311px] h-[471px] lg:w-[513px] lg:h-[628px] rounded-xl
     translate-y-full opacity-0
     transition duration-500">
 
-                <button id="closePopUp-review" class="absolute top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
+                <button id="closePopUp-review"
+                    class="absolute duration-400 hover:scale-120 top-4 right-4 text-xl text-[#FD9222] cursor-pointer">
                     ✕
                 </button>
 
-                <div class="w-[513px] h-[628px] mx-[40px]">
+                <div class="w-[311px] h-[471px] lg:w-[513px] lg:h-[628px] mx-[24px]">
                     <h5
-                        class="text-[24px] leading-[28px] tracking-[0.03em] uppercase font-[600] text-center pt-[48px] mb-[40px] w-[350px] text-left">
+                        class="text-[20px] lg:text-[24px] leading-[28px] tracking-[0.03em] uppercase font-[600] text-center pt-[24px] lg:pt-[40px] mb-[18px] lg:mb-[32px] w-[268px] lg:w-[350px] text-left">
                         LEAVE A REVIEW ABOUT <span class="text-[#FD9222]">OUR CHOCOLATE</span>
                     </h5>
-                    <div>
+                    <div class="mt-[10px]">
                         <label for="name" class="text-sm font-medium"><input id="text" type="text"
-                                class="border border-[#1111110D] rounded-[13px] p-3 w-[437px] h-[66px] mb-[18px]"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-[263px] lg:w-[437px] h-[45px] lg:h-[66px] mb-[14px] lg:mb-[18px]"
                                 placeholder="Name"></label>
 
                         <label for="email" class="text-sm font-medium"><input id="email" type="text"
-                                class="border border-[#1111110D] rounded-[13px] p-3 w-[437px]  h-[66px] mb-[18px]"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-[263px] lg:w-[437px]  h-[45px] lg:h-[66px] mb-[14px] lg:mb-[18px]"
                                 placeholder="Email"></label>
 
                         <label for="phone" class="text-sm font-medium"><input id="phone2" type="tel"
-                                class="border border-[#1111110D] rounded-[13px] p-3 w-[437px]  h-[66px] mb-[18px]"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-[263px] lg:w-[437px]  h-[45px] lg:h-[66px] mb-[14px] lg:mb-[18px]"
                                 placeholder="Phone number"></label>
 
                         <label for="text" class="text-sm font-medium"><input id="email" type="text"
-                                class="border border-[#1111110D] rounded-[13px] p-3 w-[437px]  h-[137px] mb-[18px]"
+                                class="border border-[#1111110D] rounded-[13px] p-3 w-[263px] lg:w-[437px] h-[66px] lg:h-[140px] mb-[14px] lg:mb-[18px]"
                                 placeholder="Enter text"></label>
 
                         <button
